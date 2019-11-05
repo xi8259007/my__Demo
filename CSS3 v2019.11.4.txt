@@ -1,0 +1,57 @@
+animation（动画） 支持IE10及以上.谷歌.苹果
+关键词 "from" 和 "to"，等同于 0% 和 100%。 0% 是动画的开始，100% 是动画的完成。*百分比更好*
+
+/***************************************************************/
+div {animation: myfirst 5s;}
+
+@keyframes myfirst
+{
+0%   {background: red; left:0px; top:0px;}
+25%  {background: yellow; left:200px; top:0px;}
+50%  {background: blue; left:200px; top:200px;}
+75%  {background: green; left:0px; top:200px;}
+100% {background: red; left:0px; top:0px;}
+}
+
+@-moz- @-webkit- @-o-
+
+
+@keyframes	                规定动画
+animation                       所有动画属性的简写属性  name duration timing-function delay iteration-count direction;
+
+
+animation-name 	                指定要绑定到选择器的关键帧的名称
+keyframename	规定需要绑定到选择器的 keyframe 的名称。
+none	规定无动画效果（可用于覆盖来自级联的动画）。
+
+
+animation-duration 	        动画指定需要多少秒或毫秒完成
+time	规定完成动画所花费的时间。默认值是 0，意味着没有动画效果。
+
+
+animation-timing-function 	设置动画将如何完成一个周期
+linear				动画从头到尾的速度是相同的。
+ease(默认)			默认。动画以低速开始，然后加快，在结束前变慢。
+ease-in				动画以低速开始。
+ease-out			动画以低速结束。
+ease-in-out			动画以低速开始和结束。
+
+
+animation-delay 	        设置动画在启动前的延迟间隔。		默认值：0
+提示：允许负值，-2s 使动画马上开始，但跳过 2 秒进入动画。
+
+
+animation-iteration-count 	定义动画的播放次数。			默认值：1
+n		定义动画播放次数的数值。
+infinite	规定动画应该无限次播放。
+
+
+animation-direction 	        指定是否应该轮流反向播放动画。
+normal(默认)	默认值。动画应该正常播放。
+alternate	动画应该轮流反向播放。
+
+animation-fill-mode
+none(默认)	不改变默认行为。
+forwards	当动画完成后，保持最后一个属性值（在最后一个关键帧中定义）。
+backwards	在 animation-delay 所指定的一段时间内，在动画显示之前，应用开始属性值（在第一个关键帧中定义）。
+both		向前和向后填充模式都被应用。

@@ -1,0 +1,121 @@
+function load(形参){}				load(实参)
+
+什么是面向对象：	使用对象时，只关注对象提供的功能，不关注其内部细节。
+			面向对象是一种通用思想，不了解（需要）原理的情况下，会使用它的功能。
+什么是对象：		（黑盒子）不了解内部结构，知道表面的各种操作/方法
+
+
+var foo = function(a,b){}			匿名函数	顺序执行	被调用时才被初始化
+function foo(a,b){}				函数声明	异步执行
+foo()						执行
+
+
+面向过程 ===》	面向对象
+	原则：不能有函数套函数，但可以有全局变量
+	过程：onload==>	构造函数；全局变量==>属性；函数==>方法
+	改错：this、事件、闭包、传参
+对象与闭包
+通过闭包传递this
+
+正则表达式 ==》		规则表达式
+substring(start, end)		不包含结束位置
+charAt()
+search()
+match()			把所有匹配的内容全部提取出来
+replace()			替换（配合正则，默认只替换第一个）
+
+var a = new Reg()  ||  //;	"//"以内为内容后面为配置
+转义			/\d+/g
+\d=[0-9]			数字
++			若干（连接在一起的量词）
+g			global 全部
+i			ignore 不区分大小写
+|			或（竖线）
+[]			元字符/方括号，或。
+[abc]			任意字符， [abc]pc 符合元字符中条件
+[a-z] [0-9]			范围
+[^a-z]			排除
+
+
+
+*******
+this						当前事件发生的元素/对象 -- 当前的方法属于谁,this就是谁
+变量作用域					变量起作用的范围：局部变量、全局变量
+命名规范					可读性、规范性
+匈牙利命名法					变量类型前缀、首字母大写
+brack 						整个循环终止
+continue					单次循环终止
+
+i=i+1
+i+=1
+
+循环数组					for
+循环json					for in
+
+function a(a, b)				arguments = a, b
+
+DOM事件流
+
+//阻止默认行为					event.preventDefault()
+//阻止事件冒泡/捕获				event.stopPropagation()
+
+
+//获取事件类型					event.type
+//获取事件对象					event.target
+//获取鼠标当前相对于页面的坐标 x.y		event.pageX
+
+//逻辑或、与、非
+||	&&	!
+
+//返回匹配指定 CSS 选择器元素	[css规范,获取静态]
+querySelector()					
+querySelectorAll()
+
+//获取ID 标签 类名		[动态]
+getElementByID()
+getElementsByTagName()
+getElementsByClassName()
+
+//数组方法 返回新值
+filter()
+concat()
+map()
+
+//字符串方法
+string.substring(start: int, end: int)【推荐】	从第N个开始到第N个结束（基于总长度）
+string.substr(from, length)			从第N个开始到N个长度（基于当前位置）
+
+//获取 设置 属性
+getAttribute(attribute)
+setAttribbute(attribute,value)
+
+element.childNodes				//数组，元素节点的全部子元素
+node.nodeType					//1=元素节点，2=属性节点，3=文本节点
+node.nodeValue					//检索/设置 节点的值
+node.firstChild					// = node.childNodes[0]
+node.lastChild					// = node.childNodes[node.childNodes.length-1]
+
+window.open(url,name,features)			//url=地址，name=窗口名，features=属性
+
+variable = condition ? if true : if false;	//三元运算符	条件 ? 真 : 假;
+
+typeof
+
+动态创建html
+document.write()				//写入文字
+document.createElement()			//创建元素
+document.createTextNode(text)			//创建文本
+innerHTML					//读/写某给定元素的HTML内容
+parent.appendChild(child)			//P内插入C
+parentElement.inserBefore(newElement,targetElement)
+
+
+element.className = value;                 //样式名  替换
+
+Math.ceil(number)                          //向"大于"方向舍入为与之最接近的整数
+Math.floot(number)                         //向"小于"方向舍入为与之最接近的整数
+Math.round(number)                         //舍入为与之最接近的整数/四舍五入
+
+
+let的作用域是块，而var的作用域是函数(要么是全局，要么是局部) 不可重复声明
+const的作用域是块，只要声明了就能不改变 不可重复声明

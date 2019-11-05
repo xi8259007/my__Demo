@@ -1,0 +1,11 @@
+文件名			来源
+Sublime_text		http://www.sublimetext.com/3
+VisualStudioCode	https://code.visualstudio.com/
+Adobe Photoshop		http://www.xitongzhijia.net/
+git			https://git-scm.com/
+NodeJS			https://nodejs.org/
+Shadowsocks		https://github.com/shadowsocks
+sourcetree		https://www.sourcetreeapp.com/
+LeapFTP			http://www.xitongzhijia.net/
+MicrosoftOffice2016	http://www.xitongzhijia.net/
+Google Chrome		官网

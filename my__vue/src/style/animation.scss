@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/**
+ * animation
+ */
+
+.font-spin {
+	display: inline-block;
+	-webkit-animation: font-spin 2s infinite linear;
+	animation: font-spin 2s infinite linear;
+}
+
+@-webkit-keyframes font-spin {
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+	}
+	100% {
+		-webkit-transform: rotate(359deg);
+		transform: rotate(359deg);
+	}
+}
+
+@keyframes font-spin {
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+	}
+	100% {
+		-webkit-transform: rotate(359deg);
+		transform: rotate(359deg);
+	}
+}

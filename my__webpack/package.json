@@ -1,0 +1,38 @@
+{
+	"name": "my__webpack",
+	"version": "1.0.0",
+	"description": "my first webpack",
+	"main": "webpack基本用发.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "webpack-dev-server --watch --open --inline --config webpack基本用发.js",
+		"build": "webpack --config webpack基本用发.js"
+	},
+	"keywords": [],
+	"author": "AaronLu",
+	"license": "ISC",
+	"dependencies": {},
+	"devDependencies": {
+		"@babel/core": "^7.5.5",
+		"@babel/preset-env": "^7.5.5",
+		"autoprefixer": "^9.6.1",
+		"babel-core": "^6.26.3",
+		"babel-loader": "^8.0.6",
+		"babel-preset-env": "^1.7.0",
+		"css-loader": "^3.2.0",
+		"file-loader": "^4.2.0",
+		"less": "^3.10.3",
+		"less-loader": "^5.0.0",
+		"postcss-loader": "^3.0.0",
+		"style-loader": "^1.0.0",
+		"url-loader": "^2.1.0",
+		"webpack": "^4.36.1",
+		"webpack-cli": "^3.3.6",
+		"webpack-dev-server": "^3.7.2"
+	},
+	"browserslist": [
+		"last 5 version",
+		"> 1%",
+		"not ie <= 8"
+	]
+}

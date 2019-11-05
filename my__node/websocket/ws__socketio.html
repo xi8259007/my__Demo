@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>WebSocket</title>
+	<script src="http://localhost:8080/socket.io/socket.io.js" charset="utf-8"></script>
+	<script>
+		let sock = io.connect('ws://localhost:8080/');	// http => wss
+		// 状态 连接
+		sock.on('connect', () => {
+			alert('已连接')
+		})
+
+		// 状态 断开连接
+		sock.on('disconnect', () => {
+			alert('服务端断开连接')
+		})
+		// sock.emit('aaa',11,5,4)
+		sock.on('sendTime', res => {
+			console.log(res)
+		})
+	</script>
+</head>
+
+<body>
+
+</body>
+
+</html>

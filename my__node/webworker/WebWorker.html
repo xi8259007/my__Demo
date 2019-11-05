@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<script>
+		// 多线程：性能高 共享存储空间			多个进程之间传递引用
+		// 多进程：性能低 各自独享存储空间		 复制一份给子线程
+		let oW = new Worker('worker.js');	// 创建webworker对应一个 js文件
+		oW.postMessage({a: 1, b: 3})		// 发送
+		oW.onmessage = function(e){			// 接收
+			console.log(e.data)
+		}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

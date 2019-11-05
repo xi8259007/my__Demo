@@ -1,0 +1,69 @@
+﻿this.$route				信息 params,query
+this.$router			操作 
+this.$store
+this.$attrs	
+
+beforeLoad
+router.beforeEach(to, from, next)
+-----------------------------------------------------------------------------
+
+引入模块
+1.打包在一起加载
+	import Header from '@/header'
+	{
+		components: {Header}
+	}
+2.按需加载/懒加载		分模块
+	{
+		components: {
+			Module(){
+				return import('@/module')
+			}
+		}
+	}
+
+-----------------------------------------------------------------------------
+
+data(){}				数据
+created(){}				HTML创建之前
+mounted(){}				HTML创建之前 钩子/事件
+components: {}			组件
+methods: {}				方法
+computed: {}			计算
+watch: {}				监听
+filters: {}				过滤器
+
+-----------------------------------------------------------------------------
+
+数据调用方法			生产环境 -S
+	1)promise对象		 使用asnyc&await
+	2)fetch				原生
+	3)axios				vue推荐
+
+vuex状态统一管理		生产环境 -S
+	1)state				全局唯一状态
+	2)getter			获取状态
+	3)mutation			修改状态操作,名词
+	4)action			提交mutation,动词
+	
+-----------------------------------------------------------------------------
+	
+	1.创建
+		const store = new Vuex.Store({
+			strict: true,	//	严格模式 - 只能通过mutation修改状态
+			state: {},		//	存储数据
+			mutation: {},
+			action: {},		//	适合异步
+			getter: {}		//	适合同步 - 适合数据交互
+		})
+	2.注册
+		Vue.use(Vuex)
+		let vm = new Vue({
+			...
+			store,
+			...
+		})
+	3.组建里使用
+		this.$store.dispatch('action', 参数)
+	
+	组建 dispatch => action commit => mutation state.xx => state

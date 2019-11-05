@@ -1,0 +1,43 @@
+//nodeMysql的写法
+连接
+let db =mysql.createConnection({配置})
+let db =mysql.createPool({配置})
+
+查询
+db.query(sql, (err, data)=>{});
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+数据库 - mysql	不区分大小写（建议系统关键字大写） 表名不能用中线-  用下划线_
+增				insert
+			INSERT INTO 表（字段列表） VALUES（值列表）;
+			INSERT INTO user__table(ID, name, gender, chinese, math, english) VALUES(0, 'aaron', '男', 99, 98, 100);
+删				delete
+			DELETE FROM 表 WHERE 条件（ =、<、>）;
+			DELETE FROM user__table WHERE id=1;
+改				update
+			UPDATE 表 SET 字段=值,字段2=值2,... WHERE 条件;
+			UPDATE user__table SET chinese=2 WHERE id=4
+查				select
+			SELECT 字段列表/* FROM 表 WHERE 条件;
+			SELECT name FROM user__table WHERE id=2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
