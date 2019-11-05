@@ -1,0 +1,16 @@
+预处理程序改为Sass，windows需要依赖Ruby环境（类似python需安装），通过gem(类似nodeJS npm) 安装Sass包。
+https://www.sass.hk/install/
+
+
+编译配置：
+监听代码	==>	--watch
+css排版类型	==>	--style neste（嵌套）、expanded（展开）、compact（紧密）、compressed（压缩）
+调试map		==>	--sourcemap（默认创建.map）	作用=>代码错误提示到页面/命令面板
+debug信息	==>	--debug-info			作用=>console.log
+
+
+打包方法【注意命令前后位置，监听 - scss==>css - 排版类型】
+cmd==> d: - cd xx路径 - 开始编译
+例：sass --watch style\import.scss:dist\css\import.css --style compressed
+
+tips：全部scss倒入一个文件引入（因为输出就一个避免文件太多）

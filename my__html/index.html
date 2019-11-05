@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<!-- 语言代码类型：en|zh-cmn-Han|szh-cmn-Hant ==> 默认英文|简体|繁体 -->
+<html lang="zh-cmn-Han">
+
+<head>
+	<!-- 字符编码：utf-8|gb2312|big5 ==> 万国码|简体中文|繁体中文 -->
+	<meta charset="utf-8">
+	<!-- 屏幕视口：device-width|物理宽度, initial-scale|初始缩放比例, minimum-scale|最小比例, maximum-scale|最大比例, user-scalable|是否允许缩放, shrink-to-fit|自适应IOS9+-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+
+	<!-- ****扩展 start**** -->
+
+	<!-- 浏览器内核：webkit|ie-comp|ie-stand ==> webkit内核|IE兼容内核|IE标准内核 -->
+	<meta name="renderer" content="webkit">
+	<!-- 自动禁止：数字识别为电话号码 -->
+	<meta name="format-detection" content="telephone=no, email=no, adress=no">
+	<!-- 网页描述：120 字 ~ 150 字,要流畅完整,并且能体现出当前网页的作用,能准确反映网页内容的描述标签 -->
+	<meta name="description" content="your description">
+	<!-- 谷歌插件：关闭翻译插件-->
+	<meta name="google" value="notranslate">
+	<!-- 关键词搜索：推荐5 ~ 10 -->
+	<meta name="keywords" content="bootstarp,js">
+	<!-- 搜索引擎索引方式 -->
+	<meta name="robots" content="index,follow">
+	<!-- 网页作者-->
+	<meta name="author" content="AaronLu">
+	<!-- 清理缓存：禁止浏览器从本地计算机的缓存中访问页面内容, 浏览器、缓存服务器、源服务器 -->
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+	<meta http-equiv="expires" content="0">
+
+	<!-- 版本控制：优先使用 IE 最新版本和 Chrome -->
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+	<!-- 禁止转码：百度==>添加广告 -->
+	<meta http-equiv="Cache-Control" content="no-siteapp">
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" href="ico/favicon.png">
+	<link rel="icon" href="ico/favicon.ico">
+	<title>index</title>
+
+
+	<!-- External CSS -->
+	<!-- <link rel="stylesheet" href="light.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)"> -->
+	<!-- <link rel="stylesheet" href="dark.css" media="(prefers-color-scheme: dark)"> -->
+	<!-- <link rel="stylesheet" href="static/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="static/fonts/aw-font/css/font-awesome.min.css">
+	<link rel="stylesheet" href="dist/css/import.css">
+
+
+	<!-- html5shiv.min.js ==> HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!-- respond.min.js ==> A fast & lightweight polyfill for min/max-width CSS3 Media Queries (for IE 6-8) 本地报错/环境里用 -->
+	<!--[if lte IE 9]>
+	// 仅ie9及ie9, ie10 开始不支持 此命令
+	<script src="static/js/html5shiv.min.js"></script>
+	<script src="static/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<!-- Header Start -->
+<header class="header">
+	<div class="container">
+		<div class="header__logo">
+			<h1 class="header__h1"><a class="header__brand" href="javascript:;" title="">html5 模板</a></h1>
+		</div>
+		<nav>
+			<ul class="nav navbar" role="tablist">
+				<li class="nav__item active" role="presentation"><a class="nav__link" href="#button" aria-controls="button" role="tab" data-toggle="tab">A/Button</a></li>
+				<li class="nav__item" role="presentation"><a class="nav__link" href="#table" aria-controls="table" role="tab" data-toggle="tab">Table</a></li>
+				<li class="nav__item" role="presentation"><a class="nav__link" href="#form" aria-controls="form" role="tab" data-toggle="tab">Form</a></li>
+				<li class="nav__item" role="presentation"><a class="nav__link" href="#list" aria-controls="list" role="tab" data-toggle="tab">List</a></li>
+				<li class="nav__item" role="presentation"><a class="nav__link" href="#alert" aria-controls="alert" role="tab" data-toggle="tab">Alert</a></li>
+				<li class="nav__item" role="presentation"><a class="nav__link" href="#css3" aria-controls="css3" role="tab" data-toggle="tab">Css3</a></li>
+				<li class="nav__item" role="presentation"><a class="nav__link" href="#svg" aria-controls="svg" role="tab" data-toggle="tab">SVG</a></li>
+				<li class="nav__item" role="presentation"><a class="nav__link" href="#canvas" aria-controls="Canvas" role="tab" data-toggle="tab">Canvas</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<!-- Main Start -->
+<div id="main" role="main">
+	<div class="container">
+		<div class="box">
+			<!-- Web Layout Start -->
+			<!-- <p>
+				Web Browser：Internet Explorer，Microsoft Edge，Google Chrome，Mozilla Firefox，Opera <br>
+				Web Layout：浮动布局（float），定位布局（position），行内块布局（inline-block），CSS3的多栏布局（Columns），伸缩布局（Flexbox），网格布局（Grids）
+			</p> -->
+			<!-- Nav Tabs -->
+			<!-- <nav class="collapse navbar--collapse">
+				<ul class="nav navbar" role="tablist">
+					<li class="nav__item active" role="presentation"><a class="nav__link" href="javascript:;button" aria-controls="button" role="tab" data-toggle="tab">A/Button</a></li>
+					<li class="nav__item" role="presentation"><a class="nav__link" href="javascript:;table" aria-controls="table" role="tab" data-toggle="tab">Table</a></li>
+					<li class="nav__item" role="presentation"><a class="nav__link" href="javascript:;form" aria-controls="form" role="tab" data-toggle="tab">Form</a></li>
+					<li class="nav__item" role="presentation"><a class="nav__link" href="javascript:;list" aria-controls="list" role="tab" data-toggle="tab">List</a></li>
+					<li class="nav__item" role="presentation"><a class="nav__link" href="javascript:;alert" aria-controls="alert" role="tab" data-toggle="tab">Alert</a></li>
+					<li class="nav__item" role="presentation"><a class="nav__link" href="javascript:;css3" aria-controls="css3" role="tab" data-toggle="tab">Css3</a></li>
+					<li class="nav__item" role="presentation"><a class="nav__link" href="javascript:;svg" aria-controls="svg" role="tab" data-toggle="tab">SVG</a></li>
+					<li class="nav__item" role="presentation"><a class="nav__link" href="javascript:;canvas" aria-controls="Canvas" role="tab" data-toggle="tab">Canvas</a></li>
+				</ul>
+			</nav> -->
+
+			<!-- Tab Panes -->
+			<div class="tab__content">
+				<!-- Btn-Action Start-->
+				<section class="tab__pane active" role="tabpanel" id="button">
+					<hgroup>
+						<h2>a/button 按钮组 <small>链接跳转用A，功能用Button</small></h2>
+					</hgroup>
+					<div class="btn__action">
+						<a href="javascript:;" class="btn btn--link">a链接</a>
+						<button type="button" class="btn btn--link">button按钮</button>
+						<button type="button" class="btn btn--default" data-toggle="modal" data-target="#distribute">分配</button>
+						<button type="button" class="btn btn--primary" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>新建</button>
+						<button type="button" class="btn btn--info"><i class="fa fa-edit"></i>修改</button>
+						<button type="button" class="btn btn--warning"><i class="fa fa-warning"></i>警告</button>
+						<button type="button" class="btn btn--danger"><i class="fa fa-ban"></i>危险</button>
+						<button type="button" class="btn btn--refresh"><i class="fa fa-repeat" aria-hidden="true"></i></button>
+						<button type="button" class="btn" disabled="disabled">禁止</button>
+
+						<!-- DropDown Start -->
+						<div class="btn--dropdown">
+							<button type="button" class="btn btn--default btn--dropdown__toggle" data-toggle="dropdown">更多操作 <i class="fa fa-caret-down"></i></button>
+							<ul class="btn--dropdown__menu">
+								<li><button type="button" class="btn btn--link">改变名称</button></li>
+								<li><button type="button" class="btn btn--link" disabled>不可点击</button></li>
+								<li><button type="button" class="btn btn--link">扩展内容</button></li>
+							</ul>
+						</div>
+
+						<!-- BtnCheck Start -->
+						<div class="checkbox checkbox__switch">
+							<label class="label">
+								<input type="checkbox" class="label__input">
+								<i class="label__icon"></i>
+							</label>
+						</div>
+
+						<!-- Btn-Group Start -->
+						<div class="btn__group" role="group">
+							<button type="button" class="btn btn--default active">按钮 1</button>
+							<div class="btn--dropdown">
+								<button type="button" class="btn btn--default btn--dropdown__toggle" data-toggle="dropdown">更多操作 <i class="fa fa-caret-down"></i></button>
+								<ul class="btn--dropdown__menu">
+									<li><button type="button" class="btn btn--link">改变名称</button></li>
+									<li><button type="button" class="btn btn--link" disabled>不可点击</button></li>
+									<li><button type="button" class="btn btn--link">扩展内容</button></li>
+								</ul>
+							</div>
+							<button type="button" class="btn btn--default">按钮 3</button>
+						</div>
+					</div>
+
+					<div class="btn__action">
+						<!-- Search-Box Start -->
+						<div class="btn__search-box">
+							<form action="" name="searchForm">
+								<button type="submit" class="btn"><i class="fa fa-search"></i></button>
+								<input type="text" class="form__control" placeholder="搜索框" />
+							</form>
+						</div>
+					</div>
+				</section>
+
+				<!-- Table Start -->
+				<section class="tab__pane" role="tabpanel" id="table">
+					<hgroup>
+						<h2>table 表格</h2>
+					</hgroup>
+					<!-- Table/默认 Start -->
+					<table class="table">
+						<caption class="table__caption">table -- 默认</caption>
+						<thead>
+							<tr>
+								<th>名称/ID</th>
+								<th>状态</th>
+								<th>边</th>
+								<th>框</th>
+								<th>table</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>无边框</td>
+								<td><span class="bg--green">正常</span></td>
+								<td>无边框</td>
+								<td>无边框</td>
+								<td>无边框</td>
+							</tr>
+							<tr>
+								<td>无边框</td>
+								<td><span class="bg--green">正常</span></td>
+								<td>无边框</td>
+								<td>无边框</td>
+								<td>无边框</td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- Table/带边框 Start -->
+					<table class="table table__border">
+						<caption class="table__caption">table -- 带边框</caption>
+						<thead>
+							<tr>
+								<th>名称/ID</th>
+								<th>状态</th>
+								<th>框</th>
+								<th>的</th>
+								<th>table</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>带边框</td>
+								<td><span class="bg--red">错误</span></td>
+								<td>带边框</td>
+								<td>带边框</td>
+								<td>带边框</td>
+							</tr>
+							<tr>
+								<td>带边框</td>
+								<td><span class="bg--red">错误</span></td>
+								<td>带边框</td>
+								<td>带边框</td>
+								<td>带边框</td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- Table/带边框-行 Start -->
+					<table class="table table__border-row">
+						<caption class="table__caption">table -- 边框-行</caption>
+						<thead>
+							<tr>
+								<th>名称/ID</th>
+								<th>条</th>
+								<th>纹</th>
+								<th>的</th>
+								<th>table</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>条纹色</td>
+								<td>条纹色</td>
+								<td>条纹色</td>
+								<td>条纹色</td>
+								<td>条纹色</td>
+							</tr>
+							<tr>
+								<td>条纹色</td>
+								<td>条纹色</td>
+								<td>条纹色</td>
+								<td>条纹色</td>
+								<td>条纹色</td>
+							</tr>
+							<tr>
+								<td>条纹色</td>
+								<td>条纹色</td>
+								<td>条纹色</td>
+								<td>条纹色</td>
+								<td>条纹色</td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- Table/带边框-列 Start -->
+					<table class="table table__border-column">
+						<caption class="table__caption">table -- 边框-列</caption>
+						<thead>
+							<tr>
+								<th>名称/ID</th>
+								<th>状态</th>
+								<th>描述</th>
+								<th>日期</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>条纹色</td>
+								<td>条纹色</td>
+								<td>条纹色</td>
+								<td>条纹色</td>
+							</tr>
+							<tr>
+								<td>条纹色</td>
+								<td>条纹色</td>
+								<td>条纹色</td>
+								<td>条纹色</td>
+							</tr>
+							<tr>
+								<td>条纹色</td>
+								<td>条纹色</td>
+								<td>条纹色</td>
+								<td>条纹色</td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- Table/边框/勾选/排序 Start -->
+					<table class="table table__border-check">
+						<caption class="table__caption">table -- 边框&&勾选&&排序</caption>
+						<thead>
+							<tr>
+								<th>
+									<div class="checkbox">
+										<label class="label">
+											<input type="checkbox" class="label__input" name="" />
+											<i class="label__icon"></i>
+										</label>
+									</div>
+								</th>
+								<th class="table__sort"><span class="table__sort-indicator">名称/ID</span></th>
+								<th class="table__sort"><span class="table__sort-indicator table__sort--asc">状态</span></th>
+								<th class="table__sort"><span class="table__sort-indicator table__sort--desc">常规</span></th>
+								<th class="table__sort"><span class="table__sort-indicator">详情/描述</span></th>
+								<th class="table__sort"><span class="table__sort-indicator">时间</span></th>
+								<th class="table__sort"><span class="table__sort-indicator">操作</span></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<div class="checkbox">
+										<label class="label">
+											<input type="checkbox" class="label__input" name="" />
+											<i class="label__icon" ></i>
+										</label>
+									</div>
+								</td>
+								<td><a href="javascript:;" title="link.title">常规的标题</a></td>
+								<td>常规</td>
+								<td>不需要span</td>
+								<td>
+									<span class="table__des" title="描述.title">描述文字全部显示、多行、弹出层做文字限制描述文字全部显示、多行、弹出层做文字限。描述文字全部显示、多行、弹出层做文字限制描述文字全部显示、多行、弹出层做文字限。</span>
+								</td>
+								<td><span class="table__date">2017-02-13 11:40</span></td>
+								<td>
+									<div class="table__btn-group">
+										<button type="button" class="btn">修改</button>
+										<button type="button" class="btn">删除</button>
+										<span class="table__btn-group-level1">
+											更多
+											<i class="table__btn-group-more"></i>
+											<ul class="table__btn-group">
+												<li><button type="button" class="btn">修改密码</button></li>
+												<li><button type="button" class="btn">扩容</button></li>
+												<li><button type="button" class="btn">设置</button></li>
+											</ul>
+										</span>
+									</div>
+								</td>
+							</tr>
+							<tr class="table--disabled">
+								<td>
+									<div class="checkbox">
+										<label class="label"><i class="fa fa-cog fa-spin blue"></i></label>
+									</div>
+								</td>
+								<td>
+									<div class="table__edit">
+										<a class="table__edit-link" title="link.title">
+											<i class="table__edit-tag">续</i>常规的a标签（tr禁止操作）常规的a标签（tr禁止操作）常规的a标签（tr禁止操作）
+										</a>
+										<span class="table__edit-num" title="id.title">aw-4qd4maspaw-4qd4maspaw-4qd4maspaw-4qd4maspaw-4qd4masp</span>
+										<span class="table__edit-btn"></span>
+									</div>
+								</td>
+								<td><span class="grey">配置中</span></td>
+								<td>同上</td>
+								<td>
+									<span class="table__des table__des--limit" title="描述.title">描述文字固定宽度（300）、多出隐藏、单行。描述文字固定宽度（300）、多出隐藏、单行。描述文字固定宽度（300）、多出隐藏、单行。描述文字固定宽度（300）、多出隐藏、单行。</span>
+								</td>
+								<td>同上</td>
+								<td>同上</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="checkbox">
+										<label class="label">
+											<input type="checkbox" class="label__input" name="" />
+											<i class="label__icon" ></i>
+										</label>
+									</div>
+								</td>
+								<td>
+									<div class="table__edit">
+										<a class="table__edit-link" href="javascript:;" title="link.title">
+											<i class="table__edit-tag">新</i>正常150width的名字正常150width的名字正常150width的名字正常150width的名字正常150width的名字
+										</a>
+										<span class="table__edit-num" title="id.title">aw-4qd4maspaw-4qd4maspaw-4qd4maspaw-4qd4masp</span>
+										<span class="table__edit-btn"></span>
+									</div>
+								</td>
+								<td>
+									<span class="green">运行中</span><br>
+								</td>
+								<td>同上</td>
+								<td>
+									<div class="radio" style="margin-bottom: 10px; border-bottom: solid 1px #ddd;">
+										<label class="label">
+											<input type="radio" class="label__input" name="radio" checked />
+											<i class="label__icon" ></i>
+											水平
+										</label>
+										<label class="label disabled">
+											<input type="radio" class="label__input" name="radio" disabled />
+											<i class="label__icon" ></i>
+											<span class="label__text">方向</span>
+										</label>
+										<label class="label">
+											<input type="radio" class="label__input" name="radio" />
+											<i class="label__icon" ></i>
+											<span class="label__text">单选</span>
+										</label>
+									</div>
+									<div class="radio vertical">
+										<label class="label">
+											<input type="radio" class="label__input" name="radio" />
+											<i class="label__icon" ></i>
+											<span class="label__text">垂直</span>
+											<span class="label__more">更多文字</span>
+										</label>
+										<label class="label">
+											<input type="radio" class="label__input" name="radio" />
+											<i class="label__icon" ></i>
+											<span class="label__text">方向</span>
+										</label>
+										<label class="label">
+											<input type="radio" class="label__input" name="radio" />
+											<i class="label__icon" ></i>
+											<span class="label__text">单选</span>
+										</label>
+									</div>
+								</td>
+								<td>同上</td>
+								<td>同上</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="checkbox">
+										<label class="label">
+											<input type="checkbox" class="label__input" name="" />
+											<i class="label__icon"></i>
+										</label>
+									</div>
+								</td>
+								<td>
+									<div class="table__edit sm">
+										<a class="table__edit-link" href="javascript:;" title="link.title">
+											<i class="table__edit-tag">续</i>较短120width长度的名字较短120width长度的名字较短120width长度的名字较短120width长度的名字
+										</a>
+										<span class="table__edit-num" title="id.title">aw-4qd4maspaw-4qd4maspaw-4qd4maspaw-4qd4maspaw-4qd4masp</span>
+										<span class="table__edit-btn"></span>
+									</div>
+								</td>
+								<td><span class="red">已关机</span></td>
+								<td>同上</td>
+								<td>
+									<div class="checkbox" style="margin-bottom: 10px; border-bottom: solid 1px #ddd;">
+										<label class="label">
+											<input type="checkbox" class="label__input" name="" />
+											<i class="label__icon" ></i>
+											水平
+										</label>
+										<label class="label disabled">
+											<input type="checkbox" class="label__input" name="" disabled/>
+											<i class="label__icon" ></i>
+											<span class="label__text">方向</span>
+										</label>
+										<label class="label">
+											<input type="checkbox" class="label__input" name="" />
+											<i class="label__icon" ></i>
+											<span class="label__text">多选</span>
+										</label>
+									</div>
+									<div class="checkbox vertical">
+										<label class="label">
+											<input type="checkbox" class="label__input" name="" checked/>
+											<i class="label__icon" ></i>
+											<span class="label__text">垂直</span>
+										</label>
+										<label class="label">
+											<input type="checkbox" class="label__input" name="" checked/>
+											<i class="label__icon" ></i>
+											<span class="label__text">方向</span>
+										</label>
+										<label class="label">
+											<input type="checkbox" class="label__input" name="" />
+											<i class="label__icon" ></i>
+											<span class="label__text">多选</span>
+											<span class="label__more">更多文字</span>
+										</label>
+									</div>
+								</td>
+								<td>同上</td>
+								<td>同上</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="checkbox">
+										<label class="label">
+											<input type="checkbox" class="label__input" name="" />
+											<i class="label__icon"></i>
+										</label>
+									</div>
+								</td>
+								<td>
+									<div class="table__edit lg">
+										<a class="table__edit-link" href="javascript:;" title="link.title">
+											<i class="table__edit-tag">续</i>最长200width长度的名字最长200width长度的名字最长200width长度的名字最长200width长度的名字最长200width长度的名字最长200
+										</a>
+										<span class="table__edit-num" title="id.title">aw-4qd4maspaw-4qd4maspaw-4qd4maspaw-4qd4maspaw-4qd4masp</span>
+										<span class="table__edit-btn"></span>
+									</div>
+								</td>
+								<td><span class="orange">错误项</span></td>
+								<td>同上</td>
+								<td>
+									<i class="fa fa-refresh fa-spin fa-lg"></i>
+									<i class="fa fa-spinner fa-spin fa-lg"></i>
+									<i class="fa fa-cog fa-spin fa-lg"></i>
+									<i class="fa fa-circle-o-notch fa-spin fa-lg"></i>
+									<i class="fa fa-spinner fa-pulse fa-spin fa-lg"></i>
+									<i class="fa fa-repeat fa-spin fa-lg"></i>
+								</td>
+								<td>同上</td>
+								<td>同上</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<!-- Table 分页 Start -->
+					<div class="page text--right">
+						<span class="page__count">共 100条</span>
+						<nav class="page__pagination">
+							<ul class="clearfix">
+								<li class="page__prev page__disabled"><a class="page__link" href="javascript:;">上一页</a></li><li class="page__active"><a class="page__link" href="javascript:;">1</a></li><li><a class="page__link" href="javascript:;">2</a></li><li><a class="page__link" href="javascript:;">3</a></li><li><span class="page__spr">...</span></li><li class="page__last"><a href="javascript:;" class="page__link">尾页</a></li><li class="page__next"><a class="page__link" href="javascript:;">下一页</a></li>
+							</ul>
+						</nav>
+						<span class="page__limit">
+							<select class="form__control">
+								<option value="1">10条/页</option>
+								<option value="2">20条/页</option>
+								<option value="3">30条/页</option>
+								<option value="4">40条/页</option>
+								<option value="5">50条/页</option>
+							</select>
+						</span>
+						<span class="page__skip">
+							<form action="">
+							到第<input type="number" class="form__control" min="1" max="999" value="1">页 <button class="btn btn--default">确定</button>
+							</form>
+						</span>
+					</div>
+				</section>
+
+				<!-- Form Start -->
+				<section class="tab__pane " role="tabpanel" id="form">
+					<hgroup>
+						<h2>form 表单</h2>
+					</hgroup>
+					<!-- Form-View Start -->
+					<form class="form form--horizontal" autocomplete="off" role="form" action="" method="" name="">
+						<fieldset>
+							<legend class="form__legend">view查看的表单</legend>
+							<div class="form__group">
+								<label class="form__label">电子邮箱：</label>
+								<div class="form__item">
+									<span class="form__val">sales@gmail.com</span>
+								</div>
+							</div>
+							<div class="form__group">
+								<label class="form__label">电话号码：</label>
+								<div class="form__item">
+									<span class="form__val">1334-3434-986</span>
+								</div>
+							</div>
+							<div class="form__group">
+								<label class="form__label">居住地址：</label>
+								<div class="form__item">
+									<span class="form__val">湖北省武汉市武昌区民主路727号洪山花园1栋1单元401号</span>
+								</div>
+							</div>
+							<div class="form__group">
+								<label class="form__label">邮政编码：</label>
+								<div class="form__item">
+									<span class="form__val">430000</span>
+								</div>
+							</div>
+							<div class="form__group">
+								<label class="form__label">&nbsp;</label>
+								<div class="form__item">
+									<button type="submit" class="btn btn--primary">确认</button>
+									<button class="btn btn--default">取消</button>
+								</div>
+							</div>
+							<!-- <div class="form-btn"">
+								<button class="btn btn--default">取消</button>
+								<button type="submit" class="btn btn--primary">确认</button>
+							</div> -->
+						</fieldset>
+					</form>
+
+					<!-- Form-Inline Start -->
+					<form class="form form--inline" autocomplete="off" role="form" action="" method="" name="">
+						<fieldset>
+							<legend class="form__legend">内联排列的表单</legend>
+							<div class="form__group">
+								<label class="form__label sr-only" for="">Email address</label>
+								<div class="form__item">
+									<input type="email" class="form__control" placeholder="邮箱帐号" >
+								</div>
+							</div>
+							<div class="form__group">
+								<label class="form__label sr-only" for="">Password</label>
+								<div class="form__item">
+									<input type="password" class="form__control" placeholder="输入密码" autocomplete="new-password">
+								</div>
+							</div>
+							<div class="checkbox">
+								<label class="label">
+									<input type="checkbox" class="label__input" name="">
+									<i class="label__icon"></i>保存
+								</label>
+							</div>
+							<button type="submit" class="btn btn--default">登陆</button>
+						</fieldset>
+					</form>
+
+					<!-- Basic Form Start -->
+					<form class="form" role="form" autocomplete="off" action="" method="" name="">
+						<fieldset>
+							<legend class="form__legend">单列上下排列的表单</legend>
+							<div class="form__group">
+								<label class="form__label" for="">Email address</label>
+								<div class="form__item">
+									<input type="email" class="form__control" placeholder="Enter email">
+								</div>
+							</div>
+							<div class="form__group">
+								<label class="form__label" for="">Password</label>
+								<div class="form__item">
+									<input type="password" class="form__control" placeholder="Password" autocomplete="new-password">
+									<span class="help--tips">error tips</span>
+								</div>
+							</div>
+							<div class="form__group">
+								<label class="form__label" for="">File input</label>
+								<div class="form__item">
+									<div class="form__file">
+										<input type="text" class="form__control" disabled>
+										<div class="form__file-item">
+										   <a href="javascript:;" class="form__file-btn"><input type="file" id="" class="form__file-input"></a>
+										   <button type="button" class="form__file-choose">选择文件</button>
+										</div>
+									</div>
+								</div>
+								<p class="help--tips">Example block-level help text here.</p>
+							</div>
+							<div class="checkbox">
+								<label class="label">
+									<input type="checkbox" class="label__input" name="">
+									<i class="label__icon"></i>Check me out
+								</label>
+							</div>
+							<button type="submit" class="btn btn--default">Submit</button>
+						</fieldset>
+					</form>
+
+					<!-- Two Basic Form Start -->
+					<form class="form" role="form" autocomplete="off" action="" method="" name="">
+						<fieldset>
+							<legend class="form__legend">双列上下排列的表单</legend>
+							<div class="row">
+								<div class="form__group" style="width: 49%; display: block; float: left;">
+									<label class="form__label">两列</label>
+									<div class="form__item">
+										<input type="text" class="form__control" placeholder="上下排列">
+									</div>
+								</div>
+								<div class="form__group" style="width: 49%; display: block; float: left; margin-left: 2%;">
+									<label class="form__label">两列</label>
+									<div class="form__item">
+										<input type="text" class="form__control" placeholder="上下排列">
+									</div>
+								</div>
+								<div class="form__group" style="width: 49%; display: block; float: left;">
+									<label class="form__label">两列</label>
+									<div class="form__item">
+										<input type="text" class="form__control" placeholder="上下排列">
+									</div>
+								</div>
+								<div class="form__group" style="width: 49%; display: block; float: left; margin-left: 2%;">
+									<label class="form__label">两列</label>
+									<div class="form__item">
+										<input type="text" class="form__control" placeholder="上下排列">
+									</div>
+								</div>
+								<div class="form__group">
+									<div class="form__item">
+										<button class="btn btn--default">Cancel</button>
+										<button type="submit" class="btn btn--primary">Submit</button>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+
+					<!-- Horizontal Form Start -->
+					<form class="form form--horizontal" autocomplete="off" role="form" action="" method="" name="">
+						<fieldset>
+							<legend class="form__legend">单列水平排列的表单</legend>
+							<div class="form__group">
+								<label for="inputEmail" class="form__label">Email</label>
+								<div class="form__item">
+									<input type="email" class="form__control" placeholder="Email">
+									<span class="help--tips">success or error message</span>
+								</div>
+							</div>
+							<div class="form__group">
+								<label for="" class="form__label">Password</label>
+								<div class="form__item">
+									<input type="password" class="form__control" placeholder="Password" autocomplete="new-password">
+									<div class="checkbox">
+										<label class="label">
+											<input type="checkbox" class="label__input">
+											<i class="label__icon"></i>Checkbox
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form__group">
+								<label for="textArea" class="form__label">Textarea</label>
+								<div class="form__item">
+									<textarea class="form__control" rows="3" id="textArea"></textarea>
+									<span class="help--tips">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+								</div>
+							</div>
+							<div class="form__group">
+								<label class="form__label">Radios</label>
+								<div class="form__item">
+									<div class="radio">
+										<label class="label">
+											<input type="radio" class="label__input" name="radio" checked>
+											<i class="label__icon"></i>Option one is this
+										</label>
+										<label class="label">
+											<input type="radio" class="label__input" name="radio">
+											<i class="label__icon"></i>Option two can be something else
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form__group">
+								<label for="select" class="form__label">Selects</label>
+								<div class="form__item">
+									<select class="form__control" id="select">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+									</select>
+									<br>
+									<select multiple="" class="form__control">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+									</select>
+								</div>
+							</div>
+							<div class="form__group">
+								<label for="select" class="form__label"></label>
+								<div class="form__item">
+									<button class="btn btn--default">Cancel</button>
+									<button type="submit" class="btn btn--primary">Submit</button>
+								</div>
+							</div>
+
+						</fieldset>
+					</form>
+
+					<!-- Two Horizontal Form Start -->
+					<form class="form form--horizontal" autocomplete="off" role="form" action="" method="" name="">
+						<fieldset>
+							<legend class="form__legend">双列水平排列的表单</legend>
+							<div class="row">
+								<div class="col-md-6" style="width: 49%; display: lock; float: left;">
+									<div class="form__group">
+										<label for="inputEmail" class="form__label">Email</label>
+										<div class="form__item">
+											<input type="email" class="form__control" placeholder="Email">
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6" style="width: 49%; display: block; float: left;">
+									<div class="form__group">
+										<label for="inputEmail" class="form__label">Password</label>
+										<div class="form__item">
+											<input type="password" class="form__control" placeholder="Password" autocomplete="new-password">
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6" style="width: 49%; display: block; float: left;">
+									<div class="form__group">
+										<label for="" class="form__label">select</label>
+										<div class="form__item">
+											<select class="form__control">
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6" style="width: 49%; display: block; float: left;">
+									<div class="form__group">
+										<label for="" class="form__label">checkbox</label>
+										<div class="form__item">
+											<div class="checkbox">
+												<label class="label">
+													<input type="checkbox" class="label__input" id="inlineCheckbox1" value="option1" checked>
+													<i class="label__icon"></i>1
+												</label>
+												<label class="label">
+													<input type="checkbox" class="label__input" id="inlineCheckbox2" value="option2" checked>
+													<i class="label__icon"></i>2
+												</label>
+												<label class="label">
+													<input type="checkbox" class="label__input" id="inlineCheckbox3" value="option3">
+													<i class="label__icon"></i>3
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6" style="width: 49%; display: block; float: left;">
+									<div class="form__group">
+										<label for="" class="form__label">radio</label>
+										<div class="form__item">
+											<div class="radio">
+												<label class="label">
+													<input type="radio" class="label__input" name="sex" value="option1" checked="">
+													<i class="label__icon"></i>male
+												</label>
+												<label class="label">
+													<input type="radio" class="label__input" name="sex" value="option2">
+													<i class="label__icon"></i>female
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6" style="width: 49%; display: block; float: left;">
+									<div class="form__group">
+										<label class="form__label"></label>
+										<div class="form__item">
+											<button class="btn btn--default">Cancel</button>
+											<button type="submit" class="btn btn--primary">Submit</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</section>
+
+				<!-- List Start -->
+				<section class="tab__pane" role="tabpanel" id="list">
+					<hgroup>
+						<h2>list 列表</h2>
+					</hgroup>
+					<!-- Text List Start -->
+					<h3>文字列表</h3>
+					<ul class="text-list">
+						<li>
+							<h5><a href="javascript:;" title="">Thumbnail label</a><span class="date">2014.06.28</span></h5>
+							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+							<p><a href="javascript:;" class="btn btn--primary" title="More" role="button">More</a> <a href="javascript:;" class="btn btn--default" title="View" role="button">View</a></p>
+						</li>
+						<li>
+							<h5><a href="javascript:;" title="">Thumbnail label</a><span class="date">2014.06.28</span></h5>
+							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+							<p><a href="javascript:;" class="btn btn--primary" title="More" role="button">More</a> <a href="javascript:;" class="btn btn--default" title="View" role="button">View</a></p>
+						</li>
+						<li>
+							<h5><a href="javascript:;" title="">Thumbnail label</a><span class="date">2014.06.28</span></h5>
+							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+							<p><a href="javascript:;" class="btn btn--primary" title="More" role="button">More</a> <a href="javascript:;" class="btn btn--default" title="View" role="button">View</a></p>
+						</li>
+					</ul>
+
+					<!-- Picture List Start -->
+					<h3>图片列表</h3>
+					<ul class="img-list clearfix">
+						<li>
+							<figure>
+								<a class="thumbnail" href="javascript:;" title=""><img title="" alt="" src="images/content/img_01.jpg"></a>
+								<figcaption>图片标题</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<a class="thumbnail" href="javascript:;" title=""><img title="" alt="" src="images/content/img_01.jpg"></a>
+								<figcaption>图片标题</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<a class="thumbnail" href="javascript:;" title=""><img title="" alt="" src="images/content/img_01.jpg"></a>
+								<figcaption>图片标题</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<a class="thumbnail" href="javascript:;" title=""><img title="" alt="" src="images/content/img_01.jpg"></a>
+								<figcaption>图片标题</figcaption>
+							</figure>
+						</li>
+					</ul>
+
+					<!-- Picture Text List Start -->
+					<h3>图片文字列表</h3>
+					<ul class="img-text-list clearfix">
+						<li>
+							<a class="thumbnail" title="" href="javascript:;"><img title="" alt="" src="images/content/img_01.jpg"></a>
+							<div class="caption">
+								<h5>Thumbnail label</h5>
+								<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+								<p><a href="javascript:;" class="btn btn--primary btn-more" title="More" role="button">More</a> <a href="javascript:;" class="btn btn--default btn-view" title="View" role="button">View</a></p>
+							</div>
+						</li>
+						<li>
+							<a class="thumbnail" title="" href="javascript:;"><img title="" alt="" src="images/content/img_01.jpg"></a>
+							<div class="caption">
+								<h5>Thumbnail label</h5>
+								<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+								<p><a href="javascript:;" class="btn btn--primary btn-more" title="More" role="button">More</a> <a href="javascript:;" class="btn btn--default btn-view" title="View" role="button">View</a></p>
+							</div>
+						</li>
+						<li>
+							<a class="thumbnail" title="" href="javascript:;"><img title="" alt="" src="images/content/img_01.jpg"></a>
+							<div class="caption">
+								<h5>Thumbnail label</h5>
+								<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+								<p><a href="javascript:;" class="btn btn--primary btn-more" title="More" role="button">More</a> <a href="javascript:;" class="btn btn--default btn-view" title="View" role="button">View</a></p>
+							</div>
+						</li>
+					</ul>
+
+					<!-- Picture Text Horizontal List Start -->
+					<h3>图片文字水平列表</h3>
+					<ul class="img-text-list horizontal clearfix">
+						<li>
+							<a class="thumbnail" title="" href="javascript:;"><img title="" alt="" src="images/content/img_01.jpg"></a>
+							<div class="caption">
+								<h5>Thumbnail label</h5>
+								<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+								<p><a href="javascript:;" class="btn btn--primary btn-more" title="More" role="button">More</a> <a href="javascript:;" class="btn btn--default btn-view" title="View" role="button">View</a></p>
+							</div>
+						</li>
+						<li>
+							<a class="thumbnail" title="" href="javascript:;"><img title="" alt="" src="images/content/img_01.jpg"></a>
+							<div class="caption">
+								<h5>Thumbnail label</h5>
+								<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+								<p><a href="javascript:;" class="btn btn--primary btn-more" title="More" role="button">More</a> <a href="javascript:;" class="btn btn--default btn-view" title="View" role="button">View</a></p>
+							</div>
+						</li>
+						<li>
+							<a class="thumbnail" title="" href="javascript:;"><img title="" alt="" src="images/content/img_01.jpg"></a>
+							<div class="caption">
+								<h5>Thumbnail label</h5>
+								<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+								<p><a href="javascript:;" class="btn btn--primary btn-more" title="More" role="button">More</a> <a href="javascript:;" class="btn btn--default btn-view" title="View" role="button">View</a></p>
+							</div>
+						</li>
+					</ul>
+				</section>
+
+				<!-- Alert Start -->
+				<section class="tab__pane" role="tabpanel" id="alert">
+					<hgroup>
+						<h2>alert 弹出层</h2>
+					</hgroup>
+					<div class="alert-backdrop fade in hide" >
+						<div class="alert alert-danger" role="alert">
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<div class="alert-content">
+								<div class="alert-text">确定删除本条消息吗？</div>
+								<div class="alert-item">
+									<button type="button" class="btn">确定</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="alert alert-success" role="alert">
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<div class="alert-content">
+							<div class="alert-text"><strong>Well done!</strong> You successfully read this important alert message.</div>
+							<div class="alert-item">
+								<button type="button" class="btn">确定</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="alert alert-info" role="alert">
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<div class="alert-content">
+							<div class="alert-text"><strong>Heads up!</strong> This alert needs your attention, but it's not super important.</div>
+							<div class="alert-item">
+								<button type="button" class="btn">确定</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="alert alert-warning" role="alert">
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<div class="alert-content">
+							<div class="alert-text"><strong>Warning!</strong> Better check yourself, you're not looking too good.</div>
+							<div class="alert-item">
+								<button type="button" class="btn">确定</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="alert alert-danger" role="alert">
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<div class="alert-content">
+							<div class="alert-text"><strong>Oh snap!</strong> Change a few things up and try submitting again.</div>
+							<div class="alert-item">
+								<button type="button" class="btn">确定</button>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Css3 Start -->
+				<section class="tab__pane" role="tabpanel" id="css3">
+					<hgroup>
+						<h2>flex 弹性盒模型 <small>兼容性：Internet Explorer10+，Microsoft Edge，Firefox，Google Chrome，Safari，Opera12.1+，iOS Safari</small></h2>
+					</hgroup>
+
+					<!-- Flex Start -->
+					<ul>
+						<li>
+							<h5>flex-单行/平均分布</h5>
+							<div class="flex">
+								<div class="col">1</div>
+								<div class="col">2</div>
+								<div class="col">3</div>
+								<div class="col">4</div>
+								<div class="col">5</div>
+							</div>
+						</li>
+						<li>
+							<h5>flex-单行&多行/水平居中</h5>
+							<div class="flex flex_horizontal" style="height: 100px;">
+								<figure class="bd_all-around" style="width: 100px;height: 50px;line-height: 50px;">
+									<b class="bt"></b>
+									<b class="br"></b>
+									<b class="bb"></b>
+									<b class="bl"></b>
+									四周围绕
+								</figure>
+							</div>
+						</li>
+						<li>
+							<h5>flex-单行/垂直居中</h5>
+							<div class="flex flex_vertical" style="height: 150px;">
+								<figure class="bd_circuit" style="width: 100px;height: 100px;line-height: 100px;">方形环绕</figure>
+							</div>
+						</li>
+						<li>
+							<h5>flex-单行/水平垂直居中 <small>内部设置间距</small></h5>
+							<div class="flex flex_horizontal-vertical" style="height: 100px;">
+								<figure class="bd_a-round" style="width: 100px;height: 50px;line-height: 50px;">一圈环绕</figure>
+							</div>
+						</li>
+						<li>
+							<h5>flex-多行/垂直居中 <small>自动分布间距</small></h5>
+							<div class="flex flex_multi-vertical" style="height: 300px;">
+								<figure class="bd_spin-circle" style="width: 100px;height: 100px;line-height: 100px;">旋转圆圈</figure>
+								<figure class="bd_spin-circle" style="width: 100px;height: 100px;line-height: 100px;">旋转圆圈</figure>
+							</div>
+						</li>
+						<li>
+							<h5>flex-多行/水平垂直居中 <small>内部设置间距</small></h5>
+							<div class="flex flex_multi-horizontal-vertical" style="height: 300px;">
+								<figure class="bd_center-round" style="width: 100px;height: 50px;line-height: 50px;">中心分散</figure>
+								<figure class="bd_center-round" style="width: 100px;height: 50px;line-height: 50px;">中心分散</figure>
+								<figure class="bd_center-round" style="width: 100px;height: 50px;line-height: 50px;">中心分散</figure>
+							</div>
+						</li>
+					</ul>
+
+					<!-- Calc() Start -->
+					<hgroup>
+						<h2>calc(expression) <small>兼容性：Internet Explorer9+，Microsoft Edge，Firefox4+，Google Chrome19+，Safari6+，Opera15+，iOS Safari6.1+</small></h2>
+					</hgroup>
+					<span class="help--tips">
+						多用于 "流体布局"，Android Browser支持性差（需高版本）<br>
+						使用"+" 、"-" 、"*" 和 "/"四则运算；<br>
+						可以使用百分比、px、em、rem等单位；<br>
+						可以混合使用各种单位进行计算；<br>
+						表达式中有 "+" 和 "-" 时，其前后必须要有空格，如"widht: calc(12%+5em)"这种没有空格的写法是错误的；<br>
+						表达式中有 "*" 和 "/" 时，其前后可以没有空格，但建议留有空格。
+					</span><br><br>
+					<ul class="clearfix">
+						<li style="float: left; width: calc(25%)">calc()</li>
+						<li style="float: left; width: calc(25%)">calc()</li>
+						<li style="float: left; width: calc(25%)">calc()</li>
+						<li style="float: left; width: calc(25%)">calc()</li>
+						<li style="float: left; width: calc(25%)">calc()</li>
+					</ul>
+					<br>
+
+					<!-- Grid Start -->
+					<hgroup>
+						<h2>grid <small class="red">兼容性：Internet Explorer10+，Microsoft Edge，Firefox52+，Google Chrome57+，Safari10.1+，Opera44+，iOS Safari10.3+</small></h2>
+					</hgroup>
+					<span class="help--tips">
+						2017年3月，Chrome和Firefox将开始默认支持Grid布局<br>
+						水平方向：grid-column 水平位置<br>
+						垂直方向：grid-row-start 起始位置，grid-row-end 高度总数
+					</span><br><br>
+					<ul class="grid">
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+					</ul>
+				</section>
+
+				<!-- Svg Start -->
+				<section class="tab__pane" role="tabpanel" id="svg">
+					<hgroup>
+						<h2>SVG 可缩放矢量图形 <small>Internet Explorer9+，Microsoft Edge，Firefox，Google Chrome，Safari，Opera,iOS Safari</small></h2>
+					</hgroup>
+					<p>
+						简单的理解它是图形的另一种格式例如它和常见的图片格式.png、.jpg、.gif等是一类。<br>
+						简单的图像之间画，复杂的通过软件制作，如AI<br>
+						展示方式：1.内联，2.img，3.object，4.iframe，5.css文件 background-image<br>
+						标签序列： SVG - 形状 - 行为<br>
+					</p>
+					<span><b>形状类型</b></span>
+					<p>
+						SVG属性： 边框宽度：stroke-width 1有重影2起，边框颜色：stroke，边框颜色透明度：stroke-opacity，填充颜色：fill，填充颜色透明度：fill-opacity<br>
+						SVG矩形： "rect"元素。坐标位置：'x'-x轴、'y'-y轴，宽高度：width、height(不带px)，圆角：rx=ry、值一样<br>
+						SVG圆形： "circle"元素。坐标位置：'cx'-x轴、'cy'-y轴，半径相等：r<br>
+						SVG椭圆： "ellipse"元素。坐标位置：'cx'-x轴、'cy'-y轴，半径不等：rx水平、ry垂直<br>
+						SVG线条： "line"元素。开始位置：'x1'-x轴、'y1'-y轴，结束位置：'x2'-x轴、'y2'-y轴<br>
+						SVG多边： "polygon"元素。不少于三个边，坐标位置points="x,y x,y x,y"<br>
+						SVG折线： "polyline"元素。坐标位置points="x,y x,y x,y"<br>
+						SVG路径： "path"元素。属性：d，d的值是一个"命令+参数"的序列，大写=绝对定位，小写=相对定位。直线命令：M、L、H[绘制平行线]、V[绘制垂直线]、Z[闭合路径]，曲线命令：C、S、Q、T <span class="red">[x,y,x,y]\=&gt;[x轴,y轴,x偏移,y偏移]</span>
+					</p>
+					<span><b>结构元素</b></span>
+					<p>
+						SVG"&lt;"g"&gt;"：group’的简写，是用来分组用的，它能把多个元素放在一组里，对'g'标记实施的样式和渲染会作用到这个分组内的所有元素上。组内的所有元素都会继承'g'标记上的所有属性。用'g'定义的分组还可以使用'use'进行复制使用。
+
+					</p>
+					<div style="background-color: #e3fafc; border: 1px solid #99e9f2; height: 500px;">
+						<!-- Svg Start -->
+						<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+
+							<!-- 矩形 Start -->
+							<rect x="50" y="50" width="100" height="100" fill="javascript:;99e9f2" stroke-width="2" stroke="javascript:;3bc9db"></rect>
+
+							<!-- 圆形 Start -->
+							<circle cx="250" cy="100" r="50" fill="javascript:;99e9f2" stroke-width="2" stroke="javascript:;3bc9db">
+								<!-- 行为 Start -->
+								<!-- <animate attributeName="r" values="80;100;80" dur="3s" repeatCount="indefinite"></animate> -->
+							</circle>
+
+							<!-- 椭圆 Start -->
+							<ellipse cx="450" cy="100" rx="100" ry="30" fill="javascript:;99e9f2" stroke-width="2" stroke="javascript:;3bc9db"></ellipse>
+
+							<!-- 线条 Start -->
+							<line x1="600" y1="50" x2="700" y2="150" stroke-width="2" stroke="javascript:;3bc9db"></line>
+
+							<!-- 多边 Start -->
+							<polygon points="800,50 765,150 850,85 750,85 835,150" fill="javascript:;99e9f2" stroke-width="2" stroke="javascript:;3bc9db" fill-rule="evenodd"></polygon>
+
+							<!-- 折线 Start -->
+							<polyline points="900,50 950,50 950,100 1000,100 1000,150 1050,150" fill="none" stroke-width="2" stroke="javascript:;3bc9db"></polyline>
+
+							<!-- 路径 Start -->
+							<path d="M 50 320 l 50 -100" stroke="javascript:;3bc9db" stroke-width="3" fill="none" />
+							<path d="M 100 220 l 50 100" stroke="javascript:;3bc9db" stroke-width="3" fill="none" />
+							<path d="M 75 270 l 50 0" stroke="javascript:;3bc9db" stroke-width="3" fill="none" />
+							<path d="M 50 320 q 50 -100 100 0" stroke="javascript:;3bc9db" stroke-width="3" fill="none" />
+
+							<!-- 圆圈 Start -->
+							<g stroke="javascript:;3bc9db" stroke-width="3" fill="javascript:;3bc9db">
+								<circle id="pointA" cx="50" cy="320" r="3" />
+								<circle id="pointB" cx="100" cy="220" r="3" />
+								<circle id="pointC" cx="150" cy="320" r="3" />
+							</g>
+
+							<!-- 文字 Start -->
+							<g fedistantlight font-size="20" font-family="sans-serif" fill="javascript:;3bc9db" stroke="none" text-anchor="middle">
+								<text x="45" y="320" dx="-10">A</text>
+								<text x="100" y="200" dy="10">B</text>
+								<text x="155" y="320" dx="10">C</text>
+							</g>
+
+
+							<!-- 进度圈 Start -->
+						</svg>
+					</div>
+				</section>
+
+				<!-- Canvas start -->
+				<section class="tab__pane" role="tabpanel" id="canvas">
+					<p></p>
+					<p>requestAnimationFrame(fn) 动画</p>
+					<p>getContext('类型')	2d/webGl</p>
+					<p>
+						路径操作：beginPath、closePath、moveTo/lineTo、fill/stroke、strokeStyle、lineWidth
+					</p>
+					<p>矩形：rect、fillRect(x,y,w,h)、strokeRect(x,y,w,h)、clearRect</p>
+					<p>弧形：arc(cx, cy, r, startAng, endAng, 方向默认false,true)</p>
+					<div style="width: 400px; height:300px;background-color: #ccc;" id="div1">拖进来上传</div>
+					<p >Canvas</p>
+				</section>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Web Footer Start -->
+<footer class="footer">
+	<div class="container">coopyright</div>
+</footer>
+
+<!-- Wap Footer Start -->
+<!-- <footer class="footer">
+	<div class="footer--fixed">
+		<div class="footer--absolute">
+			<div class="btn-item"><a class="btn ok" href="javascript:;">移动端</a></div>
+		</div>
+	</div>
+</footer> -->
+
+<!-- Modal Start -->
+<div class="modal fade" tabindex="-1" role="dialog" id="myModal" data-backdrop="static">
+	<div class="modal--dialog" role="document">
+		<div class="modal__content">
+			<div class="modal__common ">
+				<div class="modal__header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-close" aria-hidden="true"></i></button>
+					<h3 class="modal__title">modal-title</h3>
+				</div>
+
+				<div class="modal__body">
+					<form class="form form--inline" role="form" autocomplete="off" action="">
+						<fieldset>
+							<div class="form__group">
+								<label class="form__label sr-only" for="">Email address</label>
+								<div class="form__item">
+									<input type="email" class="form__control" placeholder="邮箱帐号" required="required">
+								</div>
+							</div>
+							<div class="form__group">
+								<label class="form__label sr-only" for="">Password</label>
+								<div class="form__item">
+									<input type="password" class="form__control" placeholder="输入密码" autocomplete="new-password">
+								</div>
+							</div>
+							<div class="checkbox">
+								<label class="label">
+									<input type="checkbox" class="label__input" name="">
+									<i class="label__icon"></i>保存
+								</label>
+							</div>
+							<div class="radio">
+								<label class="label">
+									<input type="radio" class="label__input" name="radio">
+									<i class="label__icon"></i>单选1
+								</label>
+								<label class="label">
+									<input type="radio" class="label__input" name="radio">
+									<i class="label__icon"></i>单选2
+								</label>
+							</div>
+							<button type="submit" class="btn btn--default">登陆</button>
+						</fieldset>
+					</form>
+				</div>
+
+				<div class="modal__footer">
+					<button type="button" class="btn btn--default" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn--primary" disabled>确定</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="distribute">
+	<div class="modal--dialog" role="document">
+		<div class="modal__content">
+			<div class="modal__common">
+				<div class="modal__header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-close" aria-hidden="true"></i></button>
+					<h3 class="modal__title">modal-title</h3>
+				</div>
+				<div class="modal__body">
+					<div class="modal__select clearfix">
+						<div class="modal__select-left">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>权限</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<div class="checkbox">
+												<label class="label">
+													<input type="checkbox" class="label__input" name="">
+													<i class="label__icon"></i>多选1
+												</label>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="checkbox">
+												<label class="label">
+													<input type="checkbox" class="label__input" name="">
+													<i class="label__icon"></i>多选2
+												</label>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="checkbox">
+												<label class="label">
+													<input type="checkbox" class="label__input" name="">
+													<i class="label__icon"></i>多选2
+												</label>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="checkbox">
+												<label class="label">
+													<input type="checkbox" class="label__input" name="">
+													<i class="label__icon"></i>多选2
+												</label>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="checkbox">
+												<label class="label">
+													<input type="checkbox" class="label__input" name="">
+													<i class="label__icon"></i>多选2
+												</label>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="checkbox">
+												<label class="label">
+													<input type="checkbox" class="label__input" name="">
+													<i class="label__icon"></i>多选2
+												</label>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="checkbox">
+												<label class="label">
+													<input type="checkbox" class="label__input" name="">
+													<i class="label__icon"></i>多选2
+												</label>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="modal__select-btngroup">
+							<button type="button" class="btn"><i class="fa fa-arrow-left"></i></button>
+							<button type="button" class="btn"><i class="fa fa-arrow-right"></i></button>
+						</div>
+						<div class="modal__select-right">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>已分配权限</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<div class="checkbox">
+												<label class="label">
+													<input type="checkbox" class="label__input" name="">
+													<i class="label__icon"></i>多选1
+												</label>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="modal__footer">
+					<button type="button" class="btn btn--default" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn--primary" disabled>确定</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+
+<!-- External JS -->
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+	window.onload = function(){
+		console.log(`检测浏览器是否支持暗黑模式：${window.matchMedia('prefers-color-scheme').media}`)
+
+		let oDiv = document.querySelector('#div1');
+		oDiv.addEventListener('dragenter',function(){
+			oDiv.innerHTML = "放手";
+		}, false)
+		oDiv.addEventListener('dragleave',function(){
+			oDiv.innerHTML = "拖进来上传"
+		}, false)
+		oDiv.addEventListener('dragover',function(e){
+			e.preventDefault();
+		})
+		oDiv.addEventListener('drop',function(e){
+			e.preventDefault();
+			let oFile = e.dataTransfer.files[0]
+			// let reader = new FileReader()
+			// reader.readAsText(oFile)
+			// reader.onload = function(){
+			// 	console.log(this.result)
+			// }
+			
+		})
+	}
+</script>
+</html>

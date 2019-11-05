@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+/**
+ * variabled
+ */
+
+/* color */
+$black:												#333333;
+$blackDark:											#000000;
+$blackLight:										#666666;
+
+$white:												#ffffff;
+$offwhite:											#e5e5e5;
+$greyFont:											#999999;
+$grey:												#f2f2f2;
+$greyDark:											#cdcdcd;
+$greyLight:											#f8f8f8;
+
+$red:												#d9534f;
+$redDark:											#d43f3a;
+$redLight:											#f2dede;
+$blue:												#22b2ee;
+$blueDark:											#4d7dbd;
+$blueLight:											#d9edf7;
+$green:												#28b491;
+$greenDark:											#22a282;
+$greenLight:										#dff0d8;
+$orange:											#ffb053;
+$orangeDark:										#ff8a00;
+$orangeLight:										#fcf8e3;
+
+
+/* aColor */
+$color:												 $black;
+$colorHover:										  $blue;
+$aColor:											  $blue;
+$aVisited:											 $black;
+$aActive:											 $black;
+$aFocus:											 $black;
+
+
+/* fontSize */
+$headFontSize:										   24px;
+$panelFontSize:										   18px;
+$normFontSize:										   14px;
+$tipsFontSize:										   12px;
+
+
+/* border */
+$borderRadius:											2px;
+$borderColor:									  $offwhite;
+
+
+/* height & lineheight */
+$inputHeight:										   34px;
+$inputLineHeight:									   34px;
+$btnHeight:											   34px;
+$btnLineHeight:										   34px;
+
+/* input */
+$inputColor:									  $greyFont;
+$inputBg:											 $white;
+$inputBgDisabled:								 $greyLight;
+$inputBorderColor:							   $borderColor;
+$inputBorderColorFocus:								  $blue;
+
+
+/* radio & checkbox */
+$checkbox:										  $greyFont;
+$checkboxChecked:									  $blue;
+$radio:											  $greyFont;
+$radioChecked:										  $blue;
+$radioCheckboxDisabled: 						  $offwhite;
+
+
+/* Button */
+$btnDefaultColor:									 $black;
+$btnDefaultBg:										 $white;
+$btnDefaultBgHover:									  $grey;
+$btnDefaultBorderColor:						   $borderColor;
+
+$btnPrimaryColor:									 $white;
+$btnPrimaryBg:										 $green;
+$btnPrimaryBgHover:								 $greenDark;
+$btnPrimaryBorderColor:							 $greenDark;
+
+$btnInfoColor:										 $white;
+$btnInfoBg:											  $blue;
+$btnInfoBgHover:								  $blueDark;
+$btnInfoBorderColor:							  $blueDark;
+
+$btnWarningColor:									 $white;
+$btnWarningBg:										$orange;
+$btnWarningBgHover:								$orangeDark;
+$btnWarningBorderColor:							$orangeDark;
+
+$btnDangerColor:									 $white;
+$btnDangerBg:										   $red;
+$btnDangerBgHover:								   $redDark;
+$btnDangerBorderColor:							   $redDark;
+
+$btnDisabledColor:								$blackLight;
+$btnDisabledBg:										  $grey;
+
+
+/* table */
+$tableBorder:								   $borderColor;
+$tableThBg:											  $grey;
+$tableTdBg:											 $white;
+$tableTdBgEven:										#fafafa;
+$tableTdBgHover:								 	  $grey;
+$tableTdBgDisabled:								 $greyLight;
+
+
+/* tips */
+$tipsSuccessColor:								 $greenDark;
+$tipsSuccessBg:									$greenLight;
+$tipsSuccessBorder:					 rgba(40, 185, 145, .2);
+
+$tipsInfoColor:									  $blueDark;
+$tipsInfoBg:									 $blueLight;
+$tipsInfoBorder:					 rgba(34, 178, 238, .2);
+
+$tipsWarningColor:								$orangeDark;
+$tipsWarningBg:								   $orangeLight;
+$tipsWarningBorder:					 rgba(255, 176, 83, .2);
+
+$tipsDangerColor:								   $redDark;
+$tipsDangerBg:									  $redLight;
+$tipsDangerBorder:					  rgba(231, 76, 60, .2);

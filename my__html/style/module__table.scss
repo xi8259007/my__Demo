@@ -1,0 +1,478 @@
+@charset "utf-8";
+
+/**
+ * table
+ */
+
+.table {
+	width: 100%;
+	margin-bottom: 15px;
+
+	thead {
+		tr {
+			background-color: $tableThBg;
+		}
+		th {
+			line-height: 19px;
+			padding: 10px 12px;
+			font-weight: bold;
+			white-space: nowrap;
+			&:first-child {
+				.checkbox {
+					.label {
+						.label__icon {
+							float: none;
+							vertical-align: baseline;
+						}
+					}
+				}
+			}
+			&:last-child {
+				border-right: none;
+			}
+		}
+	}
+	tbody {
+		tr {
+			background-color: $tableTdBg;
+			-webkit-transition: background .3s linear 0s;
+			-ms-transition: background .3s linear 0s;
+			transition: background .3s linear 0s;
+			&:hover {
+				background-color: $tableTdBgHover;
+			}
+			&:last-child {
+				td {
+					border-bottom: none;
+				}
+			}
+			&.table--disabled {
+				color: $greyFont;
+				background-color: $tableTdBgDisabled;
+				.checkbox {
+					.label {
+						cursor: default;
+					}
+				}
+				.table__edit {
+					&-link {
+						color: $greyFont;
+					}
+					&-tag {
+						background-color: $greyDark;
+					}
+				}
+				.table__btn-group {
+					.btn, .table__btn-group-more {
+						cursor: not-allowed;
+						color: $greyFont;
+					}
+				}
+			}
+		}
+		td {
+			padding: 10px 12px;
+			vertical-align: middle;
+
+			&:first-child {
+				.checkbox {
+					.label {
+						.label__icon {
+						}
+						.fa-spin {
+							width: 20px;
+							height: 20px;
+							line-height: 20px;
+							vertical-align: baseline;
+							text-align: center;
+						}
+					}
+				}
+			}
+			&:last-child {
+				border-right: none;
+			}
+		}
+	}
+	.table__caption {
+		font-weight: bold;
+		padding: 4px 8px;
+	}
+	.table__sort {
+		.table__sort-indicator {
+			display: inline-block;
+			position: relative;
+			padding-right: 12px;
+			cursor: pointer;
+			min-width: 40px;
+			white-space: nowrap;
+			line-height: 20px;
+			&::before {
+				content: "";
+				position: absolute;
+				right: 0px;
+				top: 4px;
+				width: 0;
+				height: 0;
+				border-left: 4px solid transparent;
+				border-bottom: 4px solid $greyDark;
+				border-right: 4px solid transparent;
+			}
+			&::after {
+				content: "";
+				position: absolute;
+				right: 0px;
+				bottom: 4px;
+				width: 0;
+				height: 0;
+				border-left: 4px solid transparent;
+				border-top: 4px solid $greyDark;
+				border-right: 4px solid transparent;
+			}
+			&.table__sort--asc {
+				&:before {
+					border-bottom-color: $blackLight;
+				}
+			}
+			&.table__sort--desc {
+				&::after {
+					border-top-color:$blackLight;
+				}
+			}
+		}
+	}
+	.table__edit {
+		width: 150px;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+
+		&-link {
+			color: $aColor;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			display:block;
+			overflow: hidden;
+		}
+		&-tag {
+			background-color: $orange;
+			color: $white;
+			padding: 1px 2px;
+			margin-right: 2px;
+		}
+		&-num {
+			display: inline-block;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+			max-width: 130px;
+			float: left;
+		}
+		&-btn {
+			display: none;
+			cursor: pointer;
+			font-size: 18px;
+			font-family: "FontAwesome";
+			font-style: normal;
+			line-height: 20px;
+			float: right;
+			color: $blue;
+			&::before {
+				content: "\f044";
+			}
+		}
+		&:hover {
+			.table__edit-btn {
+				display: inline-block;
+			}
+		}
+		&.sm {
+			width: 120px;
+			.table__edit-num {
+				max-width: 100px;
+			}
+		}
+		&.lg {
+			width: 200px;
+			.table__edit-num {
+				max-width: 180px;
+			}
+		}
+	}
+	.table__des {
+		width: 300px;
+		display: block;
+		&--limit {
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+		&.sm {
+			width: 200px;
+		}
+		&.lg {
+			width: 500px;
+		}
+	}
+	.table__date {
+		white-space: nowrap;
+	}
+	.table__btn-group {
+		line-height: 20px;
+		>.btn {
+			min-width: auto;
+			color: $aColor;
+			margin-right: 10px;
+			padding: 0;
+			line-height: 15px;
+			border: none;
+			vertical-align: baseline;
+			background: none;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		.table__btn-group-level1 {
+			position: relative;
+			color: $aColor;
+			padding: 4px 6px 0;
+			.table__btn-group-more {
+				position: relative;
+				font-family: FontAwesome;
+				font-size: 16px;
+				font-style: normal;
+				padding: 0 2px;
+				&::before{
+					content: "\f106";
+				}
+			}
+			.table__btn-group {
+				display: none;
+				position: absolute;
+				top: 18px;
+				min-width: 72px;
+				right: -1px;
+				border: solid 1px $borderColor;
+				background-color: $white;
+				z-index: 1;
+				padding: 4px 0;
+				>li {
+					.btn {
+						display: block;
+						background: none;
+						padding: 4px 8px;
+						line-height: 1.25;
+						text-align: left;
+						border-radius: 0;
+						width: 100%;
+					}
+					&:hover {
+						.btn {
+							background-color: $greyDark;
+						}
+					}
+				}
+			}
+			&:hover {
+				background-color: $white;
+				border:solid 1px $borderColor;
+				padding: 3px 5px 0;
+				.table__btn-group {
+					display: block;
+				}
+				.table__btn-group-more {
+					&::before{
+						content: "\f107";
+					}
+				}
+				&::before {
+					content: "";
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 100%;
+					border-bottom: solid 1px $white;
+					z-index: 10;
+				}
+			}
+		}
+	}
+	&.table__border {
+		border: solid 1px $tableBorder;
+		thead {
+			th {
+				border-right: solid 1px $tableBorder;
+				border-bottom: solid 1px $tableBorder;
+			}
+		}
+		tbody {
+			td {
+				border-right: solid 1px $tableBorder;
+				border-bottom: solid 1px $tableBorder;
+			}
+		}
+	}
+	&.table__border-row {
+		border: solid 1px $tableBorder;
+		thead {
+			th {
+				border-bottom: solid 1px $tableBorder;
+			}
+		}
+		tbody {
+			td {
+				border-bottom: solid 1px $tableBorder;
+			}
+			&:nth-child(even){
+				background-color: $tableTdBgEven;
+				&:hover {
+					background-color: $tableTdBgHover;
+				}
+			}
+		}
+	}
+	&.table__border-column {
+		border: solid 1px $tableBorder;
+		thead {
+			tr {
+				th {
+					border-right: solid 1px $tableBorder;
+				}
+			}
+		}
+		tbody {
+			tr {
+				td {
+					border-right: solid 1px $tableBorder;
+				}
+				&:nth-child(even){
+					background-color: $tableTdBgEven;
+					&:hover {
+						background-color: $tableTdBgHover;
+
+					}
+				}
+			}
+		}
+	}
+	&.table__border-check {
+		border: solid 1px $tableBorder;
+		thead {
+			th {
+				border-bottom: solid 1px $tableBorder;
+				&:first-child {
+					width: 42px;
+					padding: 10px;
+					vertical-align: middle;
+				}
+			}
+		}
+		tbody {
+			td {
+				border-bottom: solid 1px $tableBorder;
+				&:first-child {
+					width: 42px;
+					padding: 10px;
+				}
+			}
+		}
+	}
+}
+
+/*
+ * 分页
+ */
+.page {
+	.page__count {
+		display: inline-block;
+		height: 30px;
+		line-height: 30px;
+		margin-right: 10px;
+	}
+	.page__pagination {
+		display: inline-block;
+		margin-right: 5px;
+		background-color: $white;
+		li {
+			display: inline;
+			&.page__prev {
+				.page__link {
+					border-radius: $borderRadius 0 0 $borderRadius;
+				}
+			}
+			&.page__next {
+				.page__link {
+					border-radius: 0 $borderRadius $borderRadius 0;
+				}
+			}
+			&.page__active {
+				.page__link {
+					cursor: default;
+					color: $white;
+					background-color: $blueDark;
+					border-color: $blueDark;
+					position: relative;
+					z-index: 1;
+				}
+			}
+			&.page__disabled {
+				.page__link {
+					color: $grey;
+					cursor: not-allowed;
+					&:hover {
+						background:none;
+					}
+				}
+			}
+		}
+		.page__link {
+			color: $blackLight;
+			border: solid 1px $borderColor;
+			padding: 0 15px;
+			line-height: 28px;
+			display: inline-block;
+			margin-left: -1px;
+			&:hover {
+				background-color: #eee;
+			}
+		}
+		.page__spr {
+			color: $greyFont;
+			border: solid 1px $borderColor;
+			padding: 0 15px;
+			line-height: 28px;
+			display: inline-block;
+			margin-left: -1px;
+		}
+
+	}
+	.page__limit {
+		display: inline-block;
+		margin-right: 20px;
+		.form__control {
+			color: $color;
+			height: 30px;
+			line-height: 30px;
+			padding: 0 10px;
+		}
+	}
+	.page__skip {
+		color: $greyFont;
+		display: inline-block;
+		.form__control {
+			color: $color;
+			display: inline;
+			width: 40px;
+			height: 30px;
+			line-height: 30px;
+			margin: 0 10px;
+			padding: 0 5px;
+			text-align: center;
+		}
+		.btn {
+			padding: 4px 10px;
+			margin-left: 10px;
+		    vertical-align: baseline;
+		}
+	}
+}

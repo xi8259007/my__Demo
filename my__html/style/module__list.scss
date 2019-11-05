@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+/**
+ * list type
+ */
+
+.thumbnail {
+    background-color: $white;
+    border: 1px solid $borderColor;
+    border-radius: $borderRadius;
+    display: block;
+    line-height: 1.42857;
+    margin-bottom: 10px;
+    padding: 4px;
+    -webkit-transition: border .2s ease-in-out 0;
+    -moz-transition: border .2s ease-in-out 0;
+    -ms-transition: border .2s ease-in-out 0;
+    transition: border .2s ease-in-out 0;
+}
+
+.text-list {
+    > li {
+        h5 {
+            margin-bottom: 8px;
+            a {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                display: inline-block;
+                overflow: hidden;
+                width: 80%;
+                font-weight: bold;
+            }
+        }
+        .date {
+            float: right;
+            color: $greyFont;
+            font-size: $tipsFontSize;
+        }
+    }
+}
+
+.img-list {
+    margin: 0 -10px;
+    > li {
+        width: 25%;
+        float: left;
+        position: relative;
+        min-height: 1px;
+        padding: 0 10px;
+        .thumbnail {
+            margin-bottom: 5px;
+        }
+        h5 a {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            display: block;
+            overflow: hidden;
+        }
+    }
+}
+
+.img-text-list {
+    margin: 0 -10px 10px;
+    > li {
+        width: 33.33333333%;
+        float: left;
+        position: relative;
+        min-height: 1px;
+        padding: 0 10px;
+    }
+    &.horizontal {
+        > li {
+            width: 100%;
+            float: none;
+            overflow: hidden;
+            .thumbnail {
+                float: left;
+                max-width: 50%;
+                margin-right: 20px;
+            }
+            .caption {
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+.waterfall {
+    margin: 0 -1.5%;
+    .item {
+        width: 30.33333333%;
+        margin: 0 1.5% 20px;
+        padding: 15px;
+        border: solid 1px $borderColor;
+        float: left;
+    }
+    #infscr-loading {
+        position: absolute;
+        left: 50%;
+        margin-left: -110px;
+        bottom: 0px;
+    }
+}

@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+/**
+ * checkbox && radio
+ */
+
+.checkbox,
+.radio {
+	display: block;
+	margin: 0 0 6px;
+	position: relative;
+	/* height: 20px; */
+	.label {
+		margin: 6px 0;
+		display: inline-block;
+		cursor: pointer;
+		font-weight: normal;
+		margin-bottom: 0;
+/* 		height: $inputHeight;
+		line-height: $inputHeight; */
+		line-height: 22px;
+		padding-left: 0px;
+		margin-right: 0px;
+		.label__icon {
+			line-height: 1;
+			font-size: $panelFontSize + 2;
+			font-family: "FontAwesome";
+			font-style: normal;
+			width: 20px;
+			vertical-align: -2px;
+		}
+		.label__text {
+
+		}
+		.label__more {
+			font-size: $normFontSize - 2;
+			color: $radioCheckboxDisabled;
+			display: block;
+			padding-left: 27px;
+			line-height: 1;
+		}
+		.label__input {
+			position: absolute;
+			left: -9999px;
+			filter: alpha(opacity=0);
+			opacity: 0;
+			&:checked ~ .label__more {
+				color: $greyFont;
+			}
+			&[disabled] + .label__icon {
+				cursor: not-allowed;
+				&::before {
+					color: $radioCheckboxDisabled;
+				}
+			}
+			&[disabled] ~ .label__text {
+				cursor: not-allowed;
+				color: $radioCheckboxDisabled;
+			}
+		}
+		.label__input[type="checkbox"] {
+			& + .label__icon {
+				margin-right: 2px;
+				display: inline-block;
+				&::before {
+					content: '\f096';
+					color: $checkbox;
+				}
+			}
+			&:checked  + .label__icon::before {
+				content: "\f046";
+				color: $checkboxChecked;
+			}
+		}
+		.label__input[type="radio"] {
+			& + .label__icon, & + .label__icon {
+				margin-right: 2px;
+				display: inline-block;
+				&::before {
+					content: "\f10c";
+					color: $radio;
+				}
+			}
+			&:checked  + .label__icon::before {
+				content: "\f192";
+				color: $radioChecked;
+			}
+		}
+		& + .label {
+			margin-left: 5px;
+		}
+		&.disabled {
+			cursor: not-allowed;
+			color: $radioCheckboxDisabled;
+			.label__input[type="checkbox"], .label__input[type="radio"] {
+				& + .label, & + .label__icon {
+					&::before {
+						color: $radioCheckboxDisabled;
+					}
+				}
+			}
+		}
+	}
+	&.checkbox__switch {
+		display: inline-block;
+		height: $btnHeight;
+		margin: 0;
+		.label {
+			margin: 0;
+			.label__icon {
+				width: 70px;
+				height: $btnHeight;
+				background: $offwhite;
+				position: relative;
+				display: inline-block;
+				border-radius: 50px;
+				-webkit-transition: 0.4s;
+				-moz-transition: 0.4s;
+				-ms-transition: 0.4s;
+				transition: 0.4s;
+			}
+			.label__input {
+				& + .label__icon {
+					margin-right: 0;
+					&::before {
+						content: '';
+						position: absolute;
+						width: 26px;
+						height: 26px;
+						text-align: center;
+						border-radius: 100%;
+						left: 4px;
+						top: 4px;
+						z-index: 2;
+						background: $btnDefaultBg;
+						box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+						-webkit-transition: 0.4s;
+						-moz-transition: 0.4s;
+						-ms-transition: 0.4s;
+						transition: 0.4s;
+					}
+					&:hover {
+						&::before {
+							box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+						}
+					}
+				}
+				&:checked + .label__icon {
+					background: $btnPrimaryBg;
+					&::before {
+						content: '';
+						left: 39px;
+					}
+				}
+			}
+		}
+	}
+	&.vertical {
+		display: inline-block;
+		.label {
+			height: auto;
+			display: block;
+			& + .label {
+				margin-left: 0;
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
