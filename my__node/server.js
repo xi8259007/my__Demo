@@ -15,7 +15,7 @@ let keycloak = new Keycloak({ store: memoryStore }, kcConfig)
 
 let app = express();
 let server = app.listen(8080, function () {
-			console.log('Example app listening at ',);
+	console.log('Example app listening at ',);
 })
 
 

@@ -8,7 +8,7 @@ http.createServer((req, res) => {
 	let rs = fs.createReadStream(`www${pathname}`); 	// 读取、写入
 	let gz = zlib.createGzip();							// 压缩
 
-	res.setHeader('Content-Encoding', 'gzip') // 压缩格式
+	res.setHeader('Content-Encoding', 'gzip')			// 压缩格式
 
 	rs.pipe(gz).pipe(res);								// 读写返回到客户端
 
@@ -23,6 +23,6 @@ http.createServer((req, res) => {
 	// rs.on('data', () => 读取到)
 	// rs.on('end', () => 读取完成)
 	// rs.on('error', err => err)
-	// ws.on('finish', () => 管道完成)
+	// rs.on('finish', () => 管道完成)
 }).listen(8080);
 
