@@ -1,8 +1,8 @@
 export default {
 	a: 13,
-	b: 5
-} // es6
+	b: 102
+}
 
-// module.export = {
+// module.exports = {
 // 	a: 1
 // }

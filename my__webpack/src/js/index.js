@@ -3,8 +3,8 @@ import app from "./app";
 
 
 let sum = (a, b) => a + b
-alert(sum2(app.a, app.b))
 
+console.log(sum(app.a, app.b))
 
-console.log(app.a)
+console.log(app)
 console.log(process.env.NODE_ENV)

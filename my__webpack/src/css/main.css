@@ -1,4 +1,23 @@
-.box {background-color: #ccc;width: 400px;height: 300px;transform: rotate(0deg);transition: 1s all ease-in;}
-.box:hover {transform: rotate(45deg);}
-.logo {background: url(../images/ithome.logo.png) no-repeat 0 0; width: 300px;height: 100px;}
-.gif  {background: url(../images/悟空.gif) no-repeat 0 0; width: 300px;height: 200px;}
+.box {
+  background-color: #ccc;
+  width: 400px;
+  height: 300px;
+  transform: rotate(0deg);
+  transition: 1s all ease-in;
+}
+
+.box:hover {
+  transform: rotate(45deg);
+}
+
+.logo {
+  background: url(../images/ithome.logo.png) no-repeat 0 0;
+  width: 300px;
+  height: 100px;
+}
+
+.gif {
+  background: url(../images/悟空.gif) no-repeat 0 0;
+  width: 300px;
+  height: 200px;
+}
