@@ -1,4 +1,4 @@
-module.export = {
-	StyleLint: false,
-	ESLint: false
+module.exports = {
+	STYLELINT: true,
+	ESLINT: true
 }
