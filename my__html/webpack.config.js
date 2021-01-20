@@ -10,7 +10,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 module.exports = {
-	mode: 'develoment',
+	mode: 'development',
     entry: pathlib.resolve(__dirname, 'src/main'),
     output: {
         path: pathlib.resolve(__dirname, 'dist/'), 
@@ -43,13 +43,14 @@ module.exports = {
 				]
 			},
 			{														//	依赖 file-loader、url-loader
-				test: /\.(jpg|gif|png)$/i,							//	图片
+				test: /\.(jpe?g|gif|png|svg)$/i,							//	图片
 				use: {
 					loader: 'url-loader', 							//	[减少请求] 满足条件 内部调用file-loaader
 					options: {
+						esModule: false,
 						outputPath: 'images/',						//	输出路径	相对于output.path 
-						publicPath: 'dist/images/',					//	html引入路径
-						limit: 4 * 1024,							//	超过[limit] 4k使用file-loader压缩, 否则使用url-loader[base64]
+						//publicPath: 'dist/images/',					//	html引入路径
+						limit: 8 * 1024,							//	超过[limit] 4k使用file-loader压缩, 否则使用url-loader[base64]
 						name: '[name].[ext]?[hash]'
 					}
 				}

@@ -1,4 +1,4 @@
-预处理程序改为Sass，windows需要依赖Ruby环境（类似python需安装），通过gem(类似nodeJS npm) 安装Sass包。
+预处理程序改为Sass，windows需要依赖Ruby环境（类似python需安装），通过gem(类似nodeJS npm) 安装Sass依赖包。
 https://www.sass.hk/install/
 
 
@@ -14,3 +14,9 @@ cmd==> d: - cd xx路径 - 开始编译
 例：sass --watch style\import.scss:dist\css\import.css --style compressed
 
 tips：全部scss倒入一个文件引入index页面
+
+
+
+**
+  npm i安装依赖包，通过webpack指令打包输出dist文件包
+**

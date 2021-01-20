@@ -1,4 +1,4 @@
 module.exports = {
-	STYLELINT: true,
-	ESLINT: true
+	STYLELINT: false,
+	ESLINT: false
 }

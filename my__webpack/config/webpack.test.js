@@ -7,8 +7,8 @@ module.exports = {
 		filename: 'bundle.js',
 	},
 	plugins: [
-		new StylelintPlugin({
-			files: ['**/*.css','**/*.scss','**/*.less','**/*.vue','**/*.html']
-		})
+		...STYLELINT ? [new StylelintPlugin({
+			files: ['**/*.css','**/*.scss','**/*.less','**/*.vue','**/*.htm','**/*.html']
+		})] : [],
 	]
 }
