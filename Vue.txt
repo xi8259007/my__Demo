@@ -8,7 +8,7 @@ destroyed()	==>	//销毁			前/后
 component	==>	//指令集/组件
 computed	==>	//计算属性		get, set
 methods		==>	//方法
-watched		==>	//监听
+watch		==>	//监听
 
 v-if		==>	//true,false 真假		更高的切换开销		==> 频繁
 v-show		==>	//显示 has DOM		更高的初始渲染开销	==> 条件很少改变
