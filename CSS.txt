@@ -1,5 +1,5 @@
-v2019.10.29
-horizontal vertical
+v2021.2.3
+horizontal vertical panel
 
 Chrome/Firefox/Internet Explorer/Opera
 -webkit-transform:
@@ -8,25 +8,25 @@ Chrome/Firefox/Internet Explorer/Opera
      -o-transform:
         transform:
 
-// CSS ÃüÃû¹æ·¶£¡ BEM
-.block { /* styles */ }					¿é
-.block__element { /* styles */ }			¿é>ÔªËØ
-.block--modifier { /* styles */ }			¿é>ĞŞÊÎ/ĞĞÎª
+// CSS ï¿½ï¿½ï¿½ï¿½ï¿½æ·¶ï¿½ï¿½ BEM
+.block { /* styles */ }					ï¿½ï¿½
+.block__element { /* styles */ }			ï¿½ï¿½>Ôªï¿½ï¿½
+.block--modifier { /* styles */ }			ï¿½ï¿½>ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½Îª
 
-// CSS ÃüÃû¿Õ¼ä
-.l-: ²¼¾Ö(layouts)					²¼¾Ö
-.o-: ¶ÔÏó(objects)					ÓëÏÂÏà±È¶ÀÁ¢ÓëÉÏÏÂÎÄ
-.c-: ×é¼ş(components)					ÓëÉÏÏà±È½á¹¹»á±ä¶¯
-.js: jsµÄ¹³×Ó(JavaScript hooks)
-.is-|.has-: ×´Ì¬Àà(state classes)
-.t1|.s1: ÅÅ°æ´óĞ¡(typography sizes)
-.u-: ÊµÓÃÀà(utility classes)
+// CSS ï¿½ï¿½ï¿½ï¿½ï¿½Õ¼ï¿½
+.l-: ï¿½ï¿½ï¿½ï¿½(layouts)					ï¿½ï¿½ï¿½ï¿½
+.o-: ï¿½ï¿½ï¿½ï¿½(objects)					ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+.c-: ï¿½ï¿½ï¿½(components)					ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È½á¹¹ï¿½ï¿½ä¶¯
+.js: jsï¿½Ä¹ï¿½ï¿½ï¿½(JavaScript hooks)
+.is-|.has-: ×´Ì¬ï¿½ï¿½(state classes)
+.t1|.s1: ï¿½Å°ï¿½ï¿½Ğ¡(typography sizes)
+.u-: Êµï¿½ï¿½ï¿½ï¿½(utility classes)
 
 // E:before E::before
-before,afterÈ«²¿ÓÃ¡°::¡±
+before,afterÈ«ï¿½ï¿½ï¿½Ã¡ï¿½::ï¿½ï¿½
 
-// ¶àÃ½Ìå²éÑ¯ - ¸ù¾İÏµÍ³Ö÷ÌâÄ£Ê½Ô¤ÖÃÍøÕ¾Ö÷Ìâ ÉîÉ«/Ç³É«Ö÷Ìâ	no-preference/light/dark
-JS¼ì²â window.matchMedia('prefers-color-scheme').media
+// ï¿½ï¿½Ã½ï¿½ï¿½ï¿½Ñ¯ - ï¿½ï¿½ï¿½ï¿½ÏµÍ³ï¿½ï¿½ï¿½ï¿½Ä£Ê½Ô¤ï¿½ï¿½ï¿½ï¿½Õ¾ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½É«/Ç³É«ï¿½ï¿½ï¿½ï¿½	no-preference/light/dark
+JSï¿½ï¿½ï¿½ window.matchMedia('prefers-color-scheme').media
 <link rel="stylesheet" href="dark.css"  media="(prefers-color-scheme: dark)">
 <link rel="stylesheet" href="light.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
 @media (prefers-color-schem: light) {
@@ -37,33 +37,33 @@ JS¼ì²â window.matchMedia('prefers-color-scheme').media
 }
 
 
-// ×Ô¶¨Òå»æÖÆĞÎ×´						×ø±êµã
-clip-path: polygon(xÖá yÖá,xÖá yÖá)
+// ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×´						ï¿½ï¿½ï¿½ï¿½ï¿½
+clip-path: polygon(xï¿½ï¿½ yï¿½ï¿½,xï¿½ï¿½ yï¿½ï¿½)
 
 // Í¼Æ¬
-<figure>¶ÀÁ¢µÄÁ÷ÄÚÈİ£¨Í¼Ïñ¡¢Í¼±í¡¢ÕÕÆ¬¡¢´úÂëµÈµÈ£©
-  <figcaption>ÓĞ±êÌâµÄÍ¼Æ¬</figcaption>
+<figure>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ£ï¿½Í¼ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÈµÈ£ï¿½
+  <figcaption>ï¿½Ğ±ï¿½ï¿½ï¿½ï¿½Í¼Æ¬</figcaption>
   <img src="xxx" />
 </figure>
 
 <picture>
   <source srcset="ticker-tape-large.jpg" media="(min-width: 960px)">
   <source srcset="ticker-tape-medium.jpg" media="(min-width: 575px)">
-  <img src="ticker-tape-small.jpg" alt="ÏìÓ¦Ê½Í¼Ïñ" alt="USWNT ticker-tape parade">
+  <img src="ticker-tape-small.jpg" alt="ï¿½ï¿½Ó¦Ê½Í¼ï¿½ï¿½" alt="USWNT ticker-tape parade">
 </picture>
 
-// CSS ¿ØÖÆactive ÊÊÓÃÓÚ ÒÆ¶¯¶Ë
+// CSS ï¿½ï¿½ï¿½ï¿½active ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Æ¶ï¿½ï¿½ï¿½
 :focus-within
 
-// CSS Ìõ¼şÅĞ¶Ï
+// CSS ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¶ï¿½
 @media  @supports
 
-// CSS ²Î¿¼ÊÖ²á
+// CSS ï¿½Î¿ï¿½ï¿½Ö²ï¿½
 http://www.runoob.com/cssref/css-reference.html
-// css ½¥±ä
+// css ï¿½ï¿½ï¿½ï¿½
 http://www.w3cplus.com/content/css3-gradient
 
-// ×îĞÂ°æ µ¯ĞÔ²¼¾Ö
+// ï¿½ï¿½ï¿½Â°ï¿½ ï¿½ï¿½ï¿½Ô²ï¿½ï¿½ï¿½
 http://www.webhek.com/post/flex-cheatsheet.html	demo
 https://codepen.io/enxaneta/pen/adLPwv		demo
 
@@ -75,81 +75,81 @@ display : flex;
 -ms-flex: 1;
 flex: 1;
 
-// ¹ØÓÚÒÆ¶¯¶Ë±ß¿ò1px
+// ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½Ë±ß¿ï¿½1px
 ::before,::after {content: " ";position: absolute;left: 0;right: 0;height: 1px;color: #e5e5e5;z-index: 2;}
 ::before {top: 0;border-top: 1px solid #e5e5e5;-webkit-transform-origin: 0 0;transform-origin: 0 0;-webkit-transform: scaleY(.5);transform: scaleY(.5);}
 ::after {bottom:0;border-bottom: 1px solid #e5e5e5;-webkit-transform-origin: 0 100%;transform-origin: 0 100%;-webkit-transform: scaleY(.5);transform: scaleY(.5);}
 
-// µ¯ĞÔºĞ×ÓÄ£ĞÍ£¨Flexible Box£© ÊôĞÔ(ĞÂ)
-£¨·½Ïò£©flex-direction:row£¨Ë®Æ½/ĞĞ£©¡¢row-reverse£¨Ïà·´£©¡¢column£¨´¹Ö±/ÁĞ£©¡¢column-reverse£¨Ïà·´£©¡¢initial¡¢inherit(¼Ì³Ğ)
-£¨²ğĞĞ£©flex-wrap: nowrap£¨²»²ğ£©¡¢wrap£¨²ğĞĞ/²ğÁĞ£©¡¢wrap-reverse£¨Ïà·´£©¡¢initial¡¢inherit
-£¨Ë®Æ½£©justify-content:flex-start|flex-end|center|space-between|space-around|initial|inherit
-			   ¿ªÍ·   |  ½áÎ²  | ÖĞĞÄ | Í· ÖĞ Î²¶ÔÆë | ĞĞÇ°¼äºóÁô°× |
-£¨´¹Ö±£©align-items:stretch|center|flex-start|flex-end|baseline
-		    Ä¬ÈÏÖµ | ÖĞĞÄ |   ¿ªÍ·   |	½áÎ²  |  »ùÏß
-£¨´¹Ö±.¶àĞĞÆğĞ§£©align-content£ºstretch(Ä¬ÈÏÖµ)¡¢center£¨ÖĞĞÄ£©¡¢flex-start£¨¿ªÍ·£©¡¢flex-end£¨½áÎ²£©¡¢space-between£¨ĞĞ¼äÁô°×£©¡¢space-around£¨ĞĞËÄÖÜÁô°×£©¡¢initial¡¢inherit
-£¨ÅÅĞò£©order:initial£¨Ä¬ÈÏÖµ 0£©¡¢inherit
+// ï¿½ï¿½ï¿½Ôºï¿½ï¿½ï¿½Ä£ï¿½Í£ï¿½Flexible Boxï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½)
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½flex-direction:rowï¿½ï¿½Ë®Æ½/ï¿½Ğ£ï¿½ï¿½ï¿½row-reverseï¿½ï¿½ï¿½à·´ï¿½ï¿½ï¿½ï¿½columnï¿½ï¿½ï¿½ï¿½Ö±/ï¿½Ğ£ï¿½ï¿½ï¿½column-reverseï¿½ï¿½ï¿½à·´ï¿½ï¿½ï¿½ï¿½initialï¿½ï¿½inherit(ï¿½Ì³ï¿½)
+ï¿½ï¿½ï¿½ï¿½ï¿½Ğ£ï¿½flex-wrap: nowrapï¿½ï¿½ï¿½ï¿½ï¿½ğ£©¡ï¿½wrapï¿½ï¿½ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½Ğ£ï¿½ï¿½ï¿½wrap-reverseï¿½ï¿½ï¿½à·´ï¿½ï¿½ï¿½ï¿½initialï¿½ï¿½inherit
+ï¿½ï¿½Ë®Æ½ï¿½ï¿½justify-content:flex-start|flex-end|center|space-between|space-around|initial|inherit
+			   ï¿½ï¿½Í·   |  ï¿½ï¿½Î²  | ï¿½ï¿½ï¿½ï¿½ | Í· ï¿½ï¿½ Î²ï¿½ï¿½ï¿½ï¿½ | ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ |
+ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ï¿½align-items:stretch|center|flex-start|flex-end|baseline
+		    Ä¬ï¿½ï¿½Öµ | ï¿½ï¿½ï¿½ï¿½ |   ï¿½ï¿½Í·   |	ï¿½ï¿½Î²  |  ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½Ö±.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ§ï¿½ï¿½align-contentï¿½ï¿½stretch(Ä¬ï¿½ï¿½Öµ)ï¿½ï¿½centerï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½flex-startï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½flex-endï¿½ï¿½ï¿½ï¿½Î²ï¿½ï¿½ï¿½ï¿½space-betweenï¿½ï¿½ï¿½Ğ¼ï¿½ï¿½ï¿½ï¿½×£ï¿½ï¿½ï¿½space-aroundï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×£ï¿½ï¿½ï¿½initialï¿½ï¿½inherit
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½order:initialï¿½ï¿½Ä¬ï¿½ï¿½Öµ 0ï¿½ï¿½ï¿½ï¿½inherit
 
-// flex¼òĞ´
-flex-flow: flex-direction and flex-wrap;	column wrap/ row wrap; ¶àĞĞË®Æ½´¹Ö±
+// flexï¿½ï¿½Ğ´
+flex-flow: flex-direction and flex-wrap;	column wrap/ row wrap; ï¿½ï¿½ï¿½ï¿½Ë®Æ½ï¿½ï¿½Ö±
 
-// calc()  º¯Êıfunction£¬¸øÔªËØ¼ÆËã
+// calc()  ï¿½ï¿½ï¿½ï¿½functionï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø¼ï¿½ï¿½ï¿½
 .ele {width: calc(expression);}
 
-// ÒÆ³ıÊó±êÊÂ¼ş
+// ï¿½Æ³ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½
 pointer-events: none;
 
-// ½¥±ä±³¾°
-background-image: linear-gradient;//ÏßĞÔ½¥±ä
-background-image: radial-gradient;//¾¶Ïò½¥±ä
+// ï¿½ï¿½ï¿½ä±³ï¿½ï¿½
+background-image: linear-gradient;//ï¿½ï¿½ï¿½Ô½ï¿½ï¿½ï¿½
+background-image: radial-gradient;//ï¿½ï¿½ï¿½ò½¥±ï¿½
 
-// ±³¾°¼ô²Ã
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 background-clip: border-box || padding-box || context-box || no-clip || text
-border-box£º´ËÖµÎªÄ¬ÈÏÖµ£¬±³¾°´ÓborderÇøÓòÏòÍâ²Ã¼ô£¬Ò²¾ÍÊÇ³¬³ö²¿·Ö½«±»²Ã¼ôµô
-padding-box£º±³¾°´ÓpaddingÇøÓòÏòÍâ²Ã¼ô£¬³¬¹ıpaddingÇøÓòµÄ±³¾°½«±»²Ã¼ôµô
-context-box£º±³¾°´ÓcontentÇøÓòÏòÍâ²Ã¼ô£¬³¬¹ıcontextÇøÓòµÄ±³¾°½«±»²Ã¼ôµô
-no-clip£º ±³¾°´ÓborderÇøÓòÏòÍâ²Ã¼ô±³¾° £¨ -webkit-Ë½ÓĞ£©
-text£ºÎÄ±¾¼ô²Ã
+border-boxï¿½ï¿½ï¿½ï¿½ÖµÎªÄ¬ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½borderï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½Ç³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½
+padding-boxï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½paddingï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½paddingï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½
+context-boxï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½contentï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½contextï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½
+no-clipï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½borderï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ -webkit-Ë½ï¿½Ğ£ï¿½
+textï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½
 
-// ±³¾°Í¼ÏñÔ­µãÎ»ÖÃ
+// ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½Ô­ï¿½ï¿½Î»ï¿½ï¿½
 background-origin: padding-box || border-box || content-box
 
-// ·¶Î§Ñ¡Ôñ   ²»Ö§³Öie6-ie8
+// ï¿½ï¿½Î§Ñ¡ï¿½ï¿½   ï¿½ï¿½Ö§ï¿½ï¿½ie6-ie8
 ul li:nth-child(n+3):nth-child(-n+7) 
 
-// tips Èı½ÇĞÎ  transparent/Í¸Ã÷
+// tips ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  transparent/Í¸ï¿½ï¿½
 http://www.w3cplus.com/demo/395.html
 
-// ·ûºÅ
-font-family: simsun,"ËÎÌå"; &gt;&gt;
+// ï¿½ï¿½ï¿½ï¿½
+font-family: simsun,"ï¿½ï¿½ï¿½ï¿½"; &gt;&gt;
 
-// ×ÖÌå¼òĞ´
+// ï¿½ï¿½ï¿½ï¿½ï¿½Ğ´
 font:italic bold 12px/20px arial,sans-serif;
 
-// ÎÄ×ÖïÎ¿Õ
--webkit-text-fill-color: transparent; ÎÄ×ÖïÎ¿Õ
-color: red; ¹â±êÑÕÉ«
-text-shadow: 0px 0px 0px #d6obob; ÎÄ±¾ÑÕÉ«
+// ï¿½ï¿½ï¿½ï¿½ï¿½Î¿ï¿½
+-webkit-text-fill-color: transparent; ï¿½ï¿½ï¿½ï¿½ï¿½Î¿ï¿½
+color: red; ï¿½ï¿½ï¿½ï¿½ï¿½É«
+text-shadow: 0px 0px 0px #d6obob; ï¿½Ä±ï¿½ï¿½ï¿½É«
 
-// ¹â±êÑÕÉ«
+// ï¿½ï¿½ï¿½ï¿½ï¿½É«
 caret-color: red;
 
-//Ò»ĞĞ¾ÓÖĞ&¶àĞĞ×ó¶ÔÆë
+//Ò»ï¿½Ğ¾ï¿½ï¿½ï¿½&ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 div {text-align: center;}
 div > p {text-align:left; display:inline-block;}
 
-// ×ÖÌåÒıÓÃ
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  @font-face {font-family: ;src: url();}
 
-// Ê××ÖÄ¸´óĞ´
+// ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½Ğ´
 text-transform: capitalize;
 
-border-radius: Ë®Æ½ / ´¹Ö±: 45% 45% 45% 45% / 45% 45% 45% 45%;
-box-shadow :0 5px 10px rgba(0, 0, 0, 0.2); ±ß¿òÒõÓ°
+border-radius: Ë®Æ½ / ï¿½ï¿½Ö±: 45% 45% 45% 45% / 45% 45% 45% 45%;
+box-shadow :0 5px 10px rgba(0, 0, 0, 0.2); ï¿½ß¿ï¿½ï¿½ï¿½Ó°
 
 
-// µ¯³ö²ã¾ÓÖĞ
-**ÊôĞÔÖµ£ºtranslate(x,y)£¬translate3d(x,y,z)£¬translateX(x)£¬translateY(y)£¬translateZ(z)
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+**ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½translate(x,y)ï¿½ï¿½translate3d(x,y,z)ï¿½ï¿½translateX(x)ï¿½ï¿½translateY(y)ï¿½ï¿½translateZ(z)
 position: absolute;
 left:50%;
 top: 50%;
@@ -158,48 +158,48 @@ top: 50%;
 transform: translate(-50%, -50%);
 
 
-// transform ×ª»»¡¢±äĞÎ
+// transform ×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 transform: none | rotate | scale | skew | translate | matrix;
-	   Ä¬ÈÏ    Ğı×ª     Ëõ·Å   Å¤Çú      ÒÆ¶¯     ¾ØÕó±äĞÎ
+	   Ä¬ï¿½ï¿½    ï¿½ï¿½×ª     ï¿½ï¿½ï¿½ï¿½   Å¤ï¿½ï¿½      ï¿½Æ¶ï¿½     ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-transform:rotate(0deg)		Ğı×ª½Ç¶È£ºÕıÖµ=>Ë³Ê±£¬¸ºÖµ=>ÄæÊ±
-transform:translate(x,y)	Æ«ÒÆÎ»ÖÃ£ºxÕıÓÒ¸º×ó£¬yÕıÏÂ¸ºÉÏ
-transform:scale(x,y)		Ëõ·Å±¶Êı£ºÄ¬ÈÏ(1,1)£»>1·Å´ó£¬<1ËõĞ¡
-
-
+transform:rotate(0deg)		ï¿½ï¿½×ªï¿½Ç¶È£ï¿½ï¿½ï¿½Öµ=>Ë³Ê±ï¿½ï¿½ï¿½ï¿½Öµ=>ï¿½ï¿½Ê±
+transform:translate(x,y)	Æ«ï¿½ï¿½Î»ï¿½Ã£ï¿½xï¿½ï¿½ï¿½Ò¸ï¿½ï¿½ï¿½yï¿½ï¿½ï¿½Â¸ï¿½ï¿½ï¿½
+transform:scale(x,y)		ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½ï¿½(1,1)ï¿½ï¿½>1ï¿½Å´ï¿½<1ï¿½ï¿½Ğ¡
 
 
 
-**ÊôĞÔÖµ£ºrotate(angle)£¬rotate3d(x,y,z,angle)£¬rotateX(angle)£¬rotateY(angle)£¬rotateZ(angle)
+
+
+**ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½rotate(angle)ï¿½ï¿½rotate3d(x,y,z,angle)ï¿½ï¿½rotateX(angle)ï¿½ï¿½rotateY(angle)ï¿½ï¿½rotateZ(angle)
 -webkit-transform:rotate(90deg);
 -ms-transform:rotate(90deg);
-transform:rotate(90deg); Ğı×ª
+transform:rotate(90deg); ï¿½ï¿½×ª
  
-**ÊôĞÔÖµ£ºscale(x,y)£¬scale3d(x,y,z)£¬scaleX(x)£¬scaleY(y)£¬scaleZ(z)
--webkit-transform:scale(1.1) Ëõ·Å
--ms-transform:scale(1.1) Ëõ·Å
-transform:scale(1.1) Ëõ·Å
+**ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½scale(x,y)ï¿½ï¿½scale3d(x,y,z)ï¿½ï¿½scaleX(x)ï¿½ï¿½scaleY(y)ï¿½ï¿½scaleZ(z)
+-webkit-transform:scale(1.1) ï¿½ï¿½ï¿½ï¿½
+-ms-transform:scale(1.1) ï¿½ï¿½ï¿½ï¿½
+transform:scale(1.1) ï¿½ï¿½ï¿½ï¿½
 
-// ¹ı¶É
-Ãû³Æ  ³ÖĞøÊ±¼ä Ğ§¹û ÑÓ³ÙÊ±¼ä
+// ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ Ğ§ï¿½ï¿½ ï¿½Ó³ï¿½Ê±ï¿½ï¿½
 -webkit-transition: all .5s linear 0s;
 -ms-transition: all .5s linear 0s;
 transition: all .5s linear 0s;
 
-// (¶¯»­)
+// (ï¿½ï¿½ï¿½ï¿½)
 -webkit-animation: warning 1.5s infinite linear;
 -ms-animation: warning 1.5s infinite linear;
 animation: warning 1.5s infinite linear;
-           º¯ÊıÃû ³ÖĞøÊ±¼ä Á¬ĞøÑ­»· ËÙ¶È
+           ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ñ­ï¿½ï¿½ ï¿½Ù¶ï¿½
 
-linear		¹æ¶¨ÒÔÏàÍ¬ËÙ¶È¿ªÊ¼ÖÁ½áÊøµÄ¹ı¶ÉĞ§¹û
-ease   		¹æ¶¨ÂıËÙ¿ªÊ¼£¬È»ºó±ä¿ì£¬È»ºóÂıËÙ½áÊøµÄ¹ı¶ÉĞ§¹û
-ease-in		¹æ¶¨ÒÔÂıËÙ¿ªÊ¼µÄ¹ı¶ÉĞ§¹û
-ease-out	¹æ¶¨ÒÔÂıËÙ½áÊøµÄ¹ı¶ÉĞ§¹û
-ease-in-out	¹æ¶¨ÒÔÂıËÙ¿ªÊ¼ºÍ½áÊøµÄ¹ı¶ÉĞ§¹û
+linear		ï¿½æ¶¨ï¿½ï¿½ï¿½ï¿½Í¬ï¿½Ù¶È¿ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½Ğ§ï¿½ï¿½
+ease   		ï¿½æ¶¨ï¿½ï¿½ï¿½Ù¿ï¿½Ê¼ï¿½ï¿½È»ï¿½ï¿½ï¿½ì£¬È»ï¿½ï¿½ï¿½ï¿½ï¿½Ù½ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½Ğ§ï¿½ï¿½
+ease-in		ï¿½æ¶¨ï¿½ï¿½ï¿½ï¿½ï¿½Ù¿ï¿½Ê¼ï¿½Ä¹ï¿½ï¿½ï¿½Ğ§ï¿½ï¿½
+ease-out	ï¿½æ¶¨ï¿½ï¿½ï¿½ï¿½ï¿½Ù½ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½Ğ§ï¿½ï¿½
+ease-in-out	ï¿½æ¶¨ï¿½ï¿½ï¿½ï¿½ï¿½Ù¿ï¿½Ê¼ï¿½Í½ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½Ğ§ï¿½ï¿½
 
 
-// ¶¨Òå¹Ø¼üÖ¡
+// ï¿½ï¿½ï¿½ï¿½Ø¼ï¿½Ö¡
 -webkit-@keyframes warning {
     0% {transform: rotate(0deg);}
     50% {transform: rotate(180deg);background:#2ecc71;}
@@ -211,25 +211,25 @@ ease-in-out	¹æ¶¨ÒÔÂıËÙ¿ªÊ¼ºÍ½áÊøµÄ¹ı¶ÉĞ§¹û
     100% {transform: rotate(360deg);}
 }
 
-// ±íµ¥Ä¬ÈÏ×ÖÌåÑÕÉ«
+// ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«
 ::-moz-placeholder { color: #fff;opacity: 1;} /* Firefox */
-::-webkit-input-placeholder { color: #fff;} /* Safari ºÍ Chrome */
+::-webkit-input-placeholder { color: #fff;} /* Safari ï¿½ï¿½ Chrome */
 
-// Í¸Ã÷¶È
+// Í¸ï¿½ï¿½ï¿½ï¿½
 opacity:0.4;filter:alpha(opacity=40);
 
-// ±³¾°Í¸Ã÷
+// ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ï¿½
  .div{ background: rgba(0, 0, 0,0.6)!important;filter:Alpha(opacity=60);background:#000;}
  .div p{position:relative;}
 
-// ¶ş¼¶µ¼º½ aside => ul.menu-tree => li.level1 => ul.level2
-text-overflow: ellipsis; white-space: nowrap;overflow: hidden; display:block;width: 80%; ÎÄ×Ö¹Ì¶¨¿í¶È¡¢¶à³öÒş²Ø
-// CSS3 ¶àĞĞÒş²Ø
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ aside => ul.menu-tree => li.level1 => ul.level2
+text-overflow: ellipsis; white-space: nowrap;overflow: hidden; display:block;width: 80%; ï¿½ï¿½ï¿½Ö¹Ì¶ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+// CSS3 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 overflow: hidden;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;word-break: break-all;
 
-body {font-family: Arial,"Microsoft Yahei","Î¢ÈíÑÅºÚ",sans-serif;} ×ÖÌåÉèÖÃ
+body {font-family: Arial,"Microsoft Yahei","Î¢ï¿½ï¿½ï¿½Åºï¿½",sans-serif;} ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-// ½¥±ä±³¾°
+// ï¿½ï¿½ï¿½ä±³ï¿½ï¿½
 background: -webkit-linear-gradient(top, #000000 0%, #000000 100%);
 background: -moz-linear-gradient(top, #000000 0%, #000000 100%);
 background: -ms-linear-gradient(top, rgba(255,255,255,1.0) 0%, rgba(255,255,255,1.0) 100%);
@@ -238,11 +238,11 @@ background: linear-gradient(top, #000000 0%, #000000 100%);
  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#80000000,endColorstr=#80000000)"; /*Filter for IE8 */    
 filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#80000000, endColorstr=#80000000); /*Filter for older IEs */
 
-// Í¼Æ¬µ¹Ó° ¹È¸è/safari
+// Í¼Æ¬ï¿½ï¿½Ó° ï¿½È¸ï¿½/safari
 img:{-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(250, 250, 250, 0.1)))}
 
 
-// ÍøÒ³ºÚ°×É«
+// ï¿½ï¿½Ò³ï¿½Ú°ï¿½É«
 html { 
       -webkit-filter: grayscale(100%); 
       -moz-filter: grayscale(100%); 
@@ -253,30 +253,30 @@ html {
       _filter:none; 
       } 
 
-// IE6 ´°¿Ú¹Ì¶¨
+// IE6 ï¿½ï¿½ï¿½Ú¹Ì¶ï¿½
 _top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)))
 
-:firs-child		Ñ¡È¡µÚÒ»¸ö±êÇ©
-:last-child		Ñ¡È¡×îºóÒ»¸ö±êÇ©
-:nth-last-child(3)	Ñ¡È¡µ¹ÊıµÚ3¸ö±êÇ©
-:nth-child(n)		Ñ¡È¡µÚ n ¸ö±êÇ©
-:nth-child(n+4)		Ñ¡È¡´óÓÚµÈÓÚ4µÄ±êÇ©
-:nth-child(-n+4)	Ñ¡È¡Ğ¡ÓÚµÈÓÚ4µÄ±êÇ©
-:nth-child(2n)		Ñ¡È¡Å¼Êı±êÇ©£¬2n = even
-:nth-child(2n-1)	Ñ¡È¡ÆæÊé±êÇ©£¬2n-1 = odd
-:nth-child(3n+1)	×Ô¶¨ÒåÑ¡È¡£¬3n+1 = ¸ô¶şÈ¡Ò»
+:firs-child		Ñ¡È¡ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ç©
+:last-child		Ñ¡È¡ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ç©
+:nth-last-child(3)	Ñ¡È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3ï¿½ï¿½ï¿½ï¿½Ç©
+:nth-child(n)		Ñ¡È¡ï¿½ï¿½ n ï¿½ï¿½ï¿½ï¿½Ç©
+:nth-child(n+4)		Ñ¡È¡ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½4ï¿½Ä±ï¿½Ç©
+:nth-child(-n+4)	Ñ¡È¡Ğ¡ï¿½Úµï¿½ï¿½ï¿½4ï¿½Ä±ï¿½Ç©
+:nth-child(2n)		Ñ¡È¡Å¼ï¿½ï¿½ï¿½ï¿½Ç©ï¿½ï¿½2n = even
+:nth-child(2n-1)	Ñ¡È¡ï¿½ï¿½ï¿½ï¿½ï¿½Ç©ï¿½ï¿½2n-1 = odd
+:nth-child(3n+1)	ï¿½Ô¶ï¿½ï¿½ï¿½Ñ¡È¡ï¿½ï¿½3n+1 = ï¿½ï¿½ï¿½ï¿½È¡Ò»
 
 
-[attribute]		ÓÃÓÚÑ¡È¡´øÓĞÖ¸¶¨ÊôĞÔµÄÔªËØ¡£
-[attribute="value"]	ÓÃÓÚÑ¡È¡´øÓĞÖ¸¶¨ÊôĞÔºÍÖµµÄÔªËØ¡£
-[attribute~="value"]	ÓÃÓÚÑ¡È¡ÊôĞÔÖµÖĞ°üº¬Ö¸¶¨´Ê»ãµÄÔªËØ¡£
-[attribute|="value"]	ÓÃÓÚÑ¡È¡´øÓĞÒÔÖ¸¶¨Öµ¿ªÍ·µÄÊôĞÔÖµµÄÔªËØ£¬¸ÃÖµ±ØĞëÊÇÕû¸öµ¥´Ê¡£
-[attribute^="value"]	Æ¥ÅäÊôĞÔÖµÒÔÖ¸¶¨Öµ¿ªÍ·µÄÃ¿¸öÔªËØ¡£
-[attribute$="value"]	Æ¥ÅäÊôĞÔÖµÒÔÖ¸¶¨Öµ½áÎ²µÄÃ¿¸öÔªËØ¡£
-[attribute*="value"]    Æ¥ÅäÊôĞÔÖµÖĞ°üº¬Ö¸¶¨ÖµµÄÃ¿¸öÔªËØ¡£
+[attribute]		ï¿½ï¿½ï¿½ï¿½Ñ¡È¡ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½Ôµï¿½Ôªï¿½Ø¡ï¿½
+[attribute="value"]	ï¿½ï¿½ï¿½ï¿½Ñ¡È¡ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½Ôºï¿½Öµï¿½ï¿½Ôªï¿½Ø¡ï¿½
+[attribute~="value"]	ï¿½ï¿½ï¿½ï¿½Ñ¡È¡ï¿½ï¿½ï¿½ï¿½Öµï¿½Ğ°ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½Ê»ï¿½ï¿½Ôªï¿½Ø¡ï¿½
+[attribute|="value"]	ï¿½ï¿½ï¿½ï¿½Ñ¡È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½Öµï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½Ôªï¿½Ø£ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¡ï¿½
+[attribute^="value"]	Æ¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½Ö¸ï¿½ï¿½Öµï¿½ï¿½Í·ï¿½ï¿½Ã¿ï¿½ï¿½Ôªï¿½Ø¡ï¿½
+[attribute$="value"]	Æ¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½Ö¸ï¿½ï¿½Öµï¿½ï¿½Î²ï¿½ï¿½Ã¿ï¿½ï¿½Ôªï¿½Ø¡ï¿½
+[attribute*="value"]    Æ¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½Ğ°ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½Öµï¿½ï¿½Ã¿ï¿½ï¿½Ôªï¿½Ø¡ï¿½
 
-¹ØÏµÑ¡Ôñ·û
-E F                     Ñ¡ÔñËùÓĞ±»EÔªËØ°üº¬µÄFÔªËØ¡£
-E>F                     Ñ¡ÔñËùÓĞ×÷ÎªEÔªËØµÄ×ÓÔªËØF¡£
-E+F                     Ñ¡Ôñ½ôÌùÔÚEÔªËØÖ®ºóFÔªËØ¡£
-E~F                     Ñ¡ÔñEÔªËØËùÓĞĞÖµÜÔªËØF¡£
+ï¿½ï¿½ÏµÑ¡ï¿½ï¿½ï¿½
+E F                     Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½Ğ±ï¿½EÔªï¿½Ø°ï¿½ï¿½ï¿½ï¿½ï¿½FÔªï¿½Ø¡ï¿½
+E>F                     Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÎªEÔªï¿½Øµï¿½ï¿½ï¿½Ôªï¿½ï¿½Fï¿½ï¿½
+E+F                     Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½EÔªï¿½ï¿½Ö®ï¿½ï¿½FÔªï¿½Ø¡ï¿½
+E~F                     Ñ¡ï¿½ï¿½EÔªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½Ôªï¿½ï¿½Fï¿½ï¿½
