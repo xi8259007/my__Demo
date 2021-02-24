@@ -19,6 +19,15 @@
 	}
 }
 
+/* 横屏 */
+@media all and (orientation: landscape) {
+	/* 自定义样式 */
+}
+/* 竖屏 */
+@media all and (orientation: portrait) {
+	/* 自定义样式 */
+}
+
 @media screen and (max-width: 1440px) {
 }
 
