@@ -130,6 +130,24 @@ const options = {
     selectedMode: true,         //  图例选择的模式，
     inactiveColor: '#ccc',      //  图例关闭时的颜色
     data: [],                   //  数据
+    textStyle: {
+      color: '#999',
+      fontSize: 12,
+      backgroundColor: 'transparent', // 文字块背景色，一定要加上，否则对齐不会生效
+      rich: {                   //  样式class名 变量
+        a: {
+          width: 150,
+          align: 'left',
+        },
+        c: {
+          align: 'right',
+        },
+      },
+    },
+    formatter: (name: any) => {
+      const res: any = seriesData.filter((item: any) => item.name == name);
+      return `{a|${name} | ${parseFloat(res[0].proportion).toFixed(2)}%}  {c|${res[0].value}}`;
+    },
   },
 
   /**
